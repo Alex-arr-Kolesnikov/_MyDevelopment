@@ -30,17 +30,12 @@ body
   background-color: $accent
   color: $text-color1
   white-space: nowrap
-  &:hover, &:focus
+  &:hover, &:focus, &:active
+    overley: none
+    border: none
     box-shadow: 0 0 10px #fcb303, 0 0 40px #fcb303
     color: #fff
     text-decoration: none
-    &-white
-      background-color: #fff
-      color: #444
-      &:hover, &:focus
-        box-shadow: 0 0 10px #fff, 0 0 40px #fff
-        color: #444
-        text-decoration: none
 
 section, header
   position: relative
@@ -51,3 +46,4 @@ section
 
 // Modules
 @import "./modules/header"
+@import "./modules/popup_form"

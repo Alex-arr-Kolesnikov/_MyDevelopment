@@ -43,9 +43,7 @@
 
             <div class="col-lg-3 col-md-3 col-sm-6">
               <div class="wrap">
-                <button class="button">
-                  получить консультацию
-                </button>
+                <button class="button popup-btn">получить консультацию</button>
               </div>
             </div>
 
@@ -90,6 +88,31 @@
       </div>
     </div>
   </header>
+
+  <div class="popup">
+    <div class="popup-dialog">
+      <div class="popup-content">
+        <button class="popup-content_close">&times</button>
+        <h3 class="popup-content_header">
+          Заинтересовало?
+        </h3>
+        <p>Оставте свои контактные данные для связи</p>
+
+        <div class="main-form popup-content_form">
+          <form action="#">
+            <label for="#">Ваше имя</label>
+            <input class="main-form_input" type="text">
+            <label for="#">Номер телефона</label>
+            <input class="main-form_input" type="text">
+            <label for="#">Сообщение</label>
+            <textarea class="main-form_input" rows="5"></textarea>
+            <button class="button main-form_btn" type="submit">оставте заявку</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
 </body>
 
