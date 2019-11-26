@@ -1,0 +1,45 @@
+@import "vars"
+
+@media only screen and (max-width: 1200px)
+    .site-header
+        .header-content
+            margin-top: 5rem
+            &_title
+                h1
+                    margin-bottom: 3rem
+                    font-size: 2rem
+
+@media only screen and (max-width: 992px)
+    .site-header
+        background-position: top right
+        .header
+            &-content
+                margin: 5rem 5rem 0
+                text-align: center
+                &_title
+                    margin-bottom: 2rem
+                    h1
+                        font-size: 1.8rem
+                        margin-bottom: 0
+                    &_subtitle
+                        font-size: 1.4rem
+                        margin: 1rem 0 2rem
+            .wrap
+                text-align: center
+
+@media only screen and (max-width: 768px)
+    .site-header
+        .header-content_title
+            h1
+                font-size: 1.2rem
+            span
+                padding: 10px
+                font-size: 1rem
+
+@media only screen and (max-width: 480px)
+    .site-header
+        padding: 0
+        .header-content
+            margin: 5rem 1rem 0
+            &_form
+                padding: 1rem 1rem
