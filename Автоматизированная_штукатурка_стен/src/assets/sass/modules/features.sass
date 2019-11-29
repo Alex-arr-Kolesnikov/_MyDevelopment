@@ -1,0 +1,43 @@
+.features
+    &-slider
+        padding: 3rem 2rem
+        background: rgba(26, 26, 26, 0.5)
+        &_item
+            text-align: center
+            color: $text-color2
+            &_block
+                img
+                    height: 4rem
+                    display: block
+                    margin: 0 auto
+                h3
+                    height: 1rem
+                    margin: 4rem auto
+                    font-size: 1.4rem
+                    text-transform: none
+                p
+                    display: inline-block
+                    width: 85%
+                    font-size: 1.2rem
+                    font-style: italic
+
+        .owl-stage
+            display: flex
+            .owl-item img
+                display: inline-block
+                max-width: 100%
+                width: auto
+                margin: auto
+
+        .owl-nav
+            z-index: 99
+            color: $icons-color
+            font-size: 4rem
+            .owl-prev
+                position: absolute
+                top: 50%
+                left: 0
+            .owl-next
+                position: absolute
+                top: 50%
+                right: 0

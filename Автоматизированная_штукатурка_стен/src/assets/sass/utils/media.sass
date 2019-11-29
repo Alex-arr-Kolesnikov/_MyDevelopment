@@ -29,12 +29,15 @@
 
 @media only screen and (max-width: 768px)
     .site-header
-        .header-content_title
-            h1
-                font-size: 1.2rem
-            span
-                padding: 10px
-                font-size: 1rem
+        .header-content
+            &_title
+                h1
+                    font-size: 1.2rem
+                span
+                    padding: 10px
+                    font-size: 1rem
+            &_form
+                margin-bottom: 3rem
 
 @media only screen and (max-width: 480px)
     .site-header
@@ -43,3 +46,6 @@
             margin: 5rem 1rem 0
             &_form
                 padding: 1rem 1rem
+
+    .features .section-header
+        font-size: 1.4rem

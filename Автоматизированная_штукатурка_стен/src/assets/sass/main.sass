@@ -13,6 +13,7 @@ body
   margin: 0
   padding: 0
   font-family: 'Raleway', sans-serif
+  color: $mainFontColor
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
@@ -31,19 +32,23 @@ body
   color: $text-color1
   white-space: nowrap
   &:hover, &:focus, &:active
-    overley: none
     border: none
+    outline: none
     box-shadow: 0 0 10px #fcb303, 0 0 40px #fcb303
     color: #fff
     text-decoration: none
 
-section, header
+section
+  padding: 5rem 0
   position: relative
   background-size: cover
   background-position: center
-section
-  padding: 5% 0
+.section-header
+  padding-bottom: 5rem
+  text-align: center
+  font-size: 2rem
 
 // Modules
 @import "./modules/header"
 @import "./modules/popup_form"
+@import "./modules/features"
