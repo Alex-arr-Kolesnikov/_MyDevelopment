@@ -33,11 +33,15 @@
             z-index: 99
             color: $icons-color
             font-size: 4rem
-            .owl-prev
+            .owl-prev, .owl-next
                 position: absolute
                 top: 50%
+                transition: all .5s
+                outline: none
+                &:hover
+                    opacity: .6
+                    font-size: 5rem
+            .owl-prev
                 left: 0
             .owl-next
-                position: absolute
-                top: 50%
                 right: 0

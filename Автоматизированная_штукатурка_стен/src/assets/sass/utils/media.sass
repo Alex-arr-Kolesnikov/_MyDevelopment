@@ -24,28 +24,52 @@
                     &_subtitle
                         font-size: 1.4rem
                         margin: 1rem 0 2rem
+                &_form
+                    padding: 4rem
             .wrap
                 text-align: center
+
+    .price
+        .section-header
+            padding-bottom: 0
+        &-header_btn
+            padding: 0 0 3rem
+            text-align: center
+        &-block
+            margin: 1rem 3rem
 
 @media only screen and (max-width: 768px)
     .site-header
         .header-content
             &_title
                 h1
-                    font-size: 1.2rem
+                    font-size: 1.6rem
                 span
                     padding: 10px
                     font-size: 1rem
             &_form
                 margin-bottom: 3rem
+                padding: 2rem
+
+    .features
+        .section-header
+            font-size: 1.6rem
 
 @media only screen and (max-width: 480px)
     .site-header
         padding: 0
         .header-content
             margin: 5rem 1rem 0
-            &_form
-                padding: 1rem 1rem
+            &_title
+                h1
+                    font-size: 1.2rem
 
     .features .section-header
-        font-size: 1.4rem
+        text-transform: none
+    .features-slider_item_block p
+        width: 100%
+        font-size: 1rem
+
+    .price
+        &-block
+            margin: 1rem 1rem
