@@ -1,0 +1,86 @@
+.feedback
+
+    &-slider
+        padding: 4rem 5rem
+        color: $text-color2
+        background: rgba(26, 26, 26, 0.5)
+
+        &_item
+            padding: 1rem
+            .media
+                margin-top: 3rem
+                font-size: 1.4rem
+                &-body
+                    padding-left: 1rem
+                    span
+                        font-size: 1rem
+
+            .feedback_text
+                font-style: italic
+                padding: 1rem
+                border: 2px solid #46b814
+                margin-top: 2rem
+                position: relative
+                &::before
+                    content: ''
+                    display: block
+                    position: absolute
+                    top: -2rem
+                    left: 4rem
+                    width: 2rem
+                    height: 2rem
+                    background: rgba(26, 26, 26, 0.5)
+                    border: 2px solid #46b814
+                    border-bottom: none
+                    border-top-right-radius: 100px
+
+        .owl-stage
+            display: flex
+            .owl-item img
+                display: inline-block
+                max-width: 100%
+                width: auto
+                margin: auto
+        .owl-nav
+            z-index: 99
+            color: $icons-color
+            font-size: 4rem
+            .owl-prev, .owl-next
+                position: absolute
+                top: 50%
+                transition: all .5s
+                outline: none
+                &:hover
+                    opacity: .6
+                    font-size: 5rem
+            .owl-prev
+                left: 0
+            .owl-next
+                right: 0
+
+    &-form
+        color: $text-color2
+        text-align: center
+        h3
+            margin-top: 4rem
+            font-size: 1.5rem
+            text-transform: none
+        &_main
+            margin-top: 2rem
+            .feedback-label
+                display: inline-block
+                border-radius: 8px
+                font-size: 0.8rem
+
+            .feedback-input
+                display: block
+                width: 100%
+                padding: 0.5rem
+                color: $accent
+                border: 1px solid #dddddd
+                border-radius: 8px
+                background: rgba(0, 0, 0, 0)
+                outline: none
+            .feedback-btn
+                margin-top: 2rem
+                width: 50%
