@@ -1,0 +1,81 @@
+.apartments
+    background: #f6f5f4
+    padding: 60px 0
+    .apart
+        h2
+            margin-left: 20px
+            margin-bottom: 85px
+            font-size: 40px
+        .slick-slider
+            .slick-track
+                left: 5px
+                .cards-item
+                    width: 356px
+                    transition: all .2s linear
+                    &:hover
+                        background: #fafaf9
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.8)
+                    .cards-container
+                        padding: 25px
+                        &-info
+                            display: flex
+                            justify-content: space-between
+                            .money
+                                font-size: 18px
+                                color: #dfb603
+                                font-weight: bold
+                            .info
+                                span:first-child
+                                    margin-right: 18px
+                                i
+                                    margin-right: 8px
+            .prev
+                position: absolute
+                top: 50%
+                transform: scaleY(-50%)
+                z-index: 99
+                height: 4rem
+                width: 2rem
+                background: red
+                background-size: 70%
+
+        .button-search
+            display: flex
+            i
+                position: absolute
+                margin-top: 74px
+                margin-left: 45px
+                color: #919eb1
+            form input[type=text]
+                margin-top: 50px
+                margin-left: 20px
+                width: 300px
+                height: 60px
+                padding-left: 62px
+                color: #919eb1
+                border: none
+                border-top-left-radius: 8px
+                border-bottom-left-radius: 8px
+            form input[type=submit]
+                width: 115px
+                height: 60px
+                background: $accent
+                border: none
+                border-top-right-radius: 8px
+                border-bottom-right-radius: 8px
+                transition: all .3s linear
+                &:hover, &:focus, &:active
+                    box-shadow: 0 0 10px #fcb303, 0 0 40px #fcb303
+            .all
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 250px
+                height: 60px
+                margin-top: 50px
+                margin-left: 40px
+                border-radius: 8px
+                background: #fff
+                transition: all .3s linear
+                &:hover, &:focus, &:active
+                    box-shadow: 0 0 10px #fcb303, 0 0 40px #fcb303

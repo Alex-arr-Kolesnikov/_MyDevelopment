@@ -1,0 +1,134 @@
+@import "vars"
+
+@media only screen and (max-width: 1200px)
+    header, main, section, footer
+        padding: 0 calc(50% - 440px)
+
+    .site-header
+        &__menu .menu li
+            .logo
+                margin-right: 150px
+            .contacts
+                margin-right: 80px
+
+    .intro
+        &-img
+            width: 785px
+            .section-header
+                right: 50%
+                font-size: 55px
+
+    .stats
+        margin-top: 70px
+        &-text
+            p
+                margin-top: 40px
+        &-number
+            margin-top: 80px
+            .stats-line .square
+                margin: 20px
+
+    .apartments .apart
+        h2
+            margin-left: 50px
+            margin-bottom: 60px
+        .button-search
+            margin-left: 70px
+
+@media only screen and (max-width: 992px)
+    header, main, section, footer
+        padding: 0 calc(50% - 380px)
+
+    .site-header
+        &__menu .menu li
+            .logo
+                margin-right: 20px
+            .contacts
+                margin-right: 0
+
+    .intro
+        &-img .section-header
+            position: static
+            font-size: 50px
+
+    .stats
+        flex-direction: column
+        &-number
+            margin-top: 0
+            .stats-line
+                justify-content: center
+
+    .apartments .apart
+        .button-search
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin-left: 50px
+
+@media only screen and (max-width: 768px)
+    .site-header
+        &__menu
+            .toggle
+                display: block
+                clear: both
+                width: 100%
+                text-align: center
+                line-height: 40px
+                font-size: 22px
+                color: $mainFontColor
+                background: $accent
+                transition: all .1s linear
+                &:hover
+                    background: #d3a900
+        #checkbox-menu:checked + label .touch
+            height: 420px
+            li
+                opacity: 1
+                visibility: visible
+                transition: all .7s linear
+        .menu
+            display: flex
+            flex-direction: column
+            height: 0
+            transition: height .3s linear
+            li
+                display: flex
+                align-self: center
+                width: 95%
+                opacity: 0
+                visibility: hidden
+                a
+                    width: 100%
+                    text-align: center
+                .logo
+                    margin-right: 0
+
+    .intro
+        display: block
+        margin-top: 0
+        &-img
+            width: auto
+            .section-header
+                padding-top: 70px
+                text-align: center
+                font-size: 35px
+
+    .stats
+        margin-top: 20px
+
+@media only screen and (max-width: 480px)
+    .intro
+        &-img
+            height: 624px
+        &-contacts
+            display: inline-block
+            p
+                display: inline-block
+                font-size: 14px
+
+    .stats
+        h2
+            font-size: 30px
+        &-number .stats-line .square
+            margin: 10px
+            height: 160px

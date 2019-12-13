@@ -1,0 +1,25 @@
+.site-header
+    &__menu
+        #checkbox-menu, .toggle
+            display: none
+        .menu
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            height: 50px
+            align-items: center
+            li
+                white-space: nowrap
+                a
+                    padding: 10px 15px
+                    align-self: center
+                    color: $mainFontColor
+                    transition: background .2s linear
+                    &:hover
+                        background: $accent
+                        border-radius: 3px
+                .logo
+                    margin-right: 240px
+                    font-size: 25px
+                .contacts
+                    margin-right: 100px
