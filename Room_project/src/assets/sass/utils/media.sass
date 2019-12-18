@@ -32,8 +32,9 @@
         h2
             margin-left: 50px
             margin-bottom: 60px
-        .button-search
-            margin-left: 70px
+
+    .services .services-container-text p
+        margin-bottom: 0
 
 @media only screen and (max-width: 992px)
     header, main, section, footer
@@ -59,11 +60,33 @@
                 justify-content: center
 
     .apartments .apart
+        .cards-slider
+            margin: 0 50px
+            .slick-arrow
+                background: #f6f5f4
         .button-search
             flex-direction: column
             justify-content: center
             align-items: center
-            margin-left: 50px
+            i
+                margin-left: 30px
+            form input[type=text]
+                margin-left: 0
+            .all
+                margin-left: 0
+
+    .steps
+        &-container
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            .steps-container-block
+                width: 450px
+                margin: 15px
+
+    .services .services-container-text p
+        margin: 0
+        line-height: 25px
 
 @media only screen and (max-width: 768px)
     .site-header
@@ -79,7 +102,7 @@
                 background: $accent
                 transition: all .1s linear
                 &:hover
-                    background: #d3a900
+                    background: #5b38f3
         #checkbox-menu:checked + label .touch
             height: 420px
             li
@@ -116,6 +139,31 @@
     .stats
         margin-top: 20px
 
+    .apartments .apart
+        .cards-slider
+            justify-content: center
+            align-items: center
+            .slick-arrow
+                background: #f6f5f4
+
+    .steps .steps-text
+        margin: 25px
+
+    .services
+        p
+            margin: 25px
+        .services-container
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin: 50px 0 50px
+            &-img
+                width: 90%
+            &-text
+                width: 80%
+                h4
+                    margin-top: 20px
+
 @media only screen and (max-width: 480px)
     .intro
         &-img
@@ -132,3 +180,31 @@
         &-number .stats-line .square
             margin: 10px
             height: 160px
+
+    .apartments .apart
+        h2
+            margin-left: 35px
+            font-size: 30px
+        .cards-slider .slick-list .slick-track .cards-item
+            .cards-container
+                padding: 15px
+        .button-search
+            i
+                margin-left: 30px
+            form input[type=text]
+                width: 200px
+                margin-left: 0
+            form input[type=submit]
+                width: 80px
+
+    .steps
+        h2
+            margin: 30px
+            font-size: 30px
+        .steps-container .steps-container-block
+            width: 298px
+
+    .services
+        h2
+            margin: 30px
+            font-size: 30px

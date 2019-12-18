@@ -3,14 +3,14 @@
     padding: 60px 0
     .apart
         h2
-            margin-left: 20px
+            margin-left: 40px
             margin-bottom: 85px
             font-size: 40px
-        .slick-slider
-            .slick-track
-                left: 5px
+        .cards-slider
+            display: flex
+            .slick-list .slick-track
                 .cards-item
-                    width: 356px
+                    margin: 5px
                     transition: all .2s linear
                     &:hover
                         background: #fafaf9
@@ -22,33 +22,45 @@
                             justify-content: space-between
                             .money
                                 font-size: 18px
-                                color: #dfb603
+                                color: #7b60f5
                                 font-weight: bold
                             .info
                                 span:first-child
                                     margin-right: 18px
                                 i
                                     margin-right: 8px
-            .prev
+            .slick-arrow
                 position: absolute
-                top: 50%
-                transform: scaleY(-50%)
-                z-index: 99
+                top: 40%
+                width: 2.5rem
                 height: 4rem
-                width: 2rem
-                background: red
-                background-size: 70%
+                background: #fff
+                border: none
+                outline: none
+                transition: all .3s linear
+            .slick-prev
+                left: -2.5rem
+                &:hover, &:focus, &:active
+                    box-shadow: 0 0 10px #7b60f5, 0 0 40px #7b60f5
+                    border-radius: 50% 0 0 50%
+            .slick-next
+                right: -2.5rem
+                &:hover, &:focus, &:active
+                    box-shadow: 0 0 10px #7b60f5, 0 0 40px #7b60f5
+                    border-radius: 0 50% 50% 0
+            img
+                width: 100%
 
         .button-search
             display: flex
             i
                 position: absolute
                 margin-top: 74px
-                margin-left: 45px
+                margin-left: 70px
                 color: #919eb1
             form input[type=text]
                 margin-top: 50px
-                margin-left: 20px
+                margin-left: 40px
                 width: 300px
                 height: 60px
                 padding-left: 62px
@@ -65,7 +77,7 @@
                 border-bottom-right-radius: 8px
                 transition: all .3s linear
                 &:hover, &:focus, &:active
-                    box-shadow: 0 0 10px #fcb303, 0 0 40px #fcb303
+                    box-shadow: 0 0 10px #7b60f5, 0 0 40px #7b60f5
             .all
                 display: flex
                 justify-content: center
@@ -78,4 +90,4 @@
                 background: #fff
                 transition: all .3s linear
                 &:hover, &:focus, &:active
-                    box-shadow: 0 0 10px #fcb303, 0 0 40px #fcb303
+                    box-shadow: 0 0 10px #7b60f5, 0 0 40px #7b60f5
