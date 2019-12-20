@@ -59,21 +59,22 @@
             .stats-line
                 justify-content: center
 
-    .apartments .apart
-        .cards-slider
-            margin: 0 50px
-            .slick-arrow
-                background: #f6f5f4
-        .button-search
-            flex-direction: column
-            justify-content: center
-            align-items: center
-            i
-                margin-left: 30px
-            form input[type=text]
-                margin-left: 0
-            .all
-                margin-left: 0
+    .apartments
+        .apart
+            .cards-slider
+                margin: 0 50px
+                .slick-arrow
+                    background: #f6f5f4
+            .button-search
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                i
+                    margin-left: 30px
+                form input[type=text]
+                    margin-left: 0
+                .all
+                    margin-left: 0
 
     .steps
         &-container
@@ -84,9 +85,51 @@
                 width: 450px
                 margin: 15px
 
-    .services .services-container-text p
-        margin: 0
-        line-height: 25px
+    .services
+        .services-container-text p
+            margin: 0
+            line-height: 25px
+
+    .add .add-line
+        &-img
+            img
+                display: block
+                width: 400px
+                height: auto
+            .location
+
+                padding: 20px 60px 20px 40px
+            .location-melbourn
+                left: 0
+            .location-australia
+                position: relative
+                bottom: 50px
+                left: 188px
+        &-text .show-more
+            margin-top: 30px
+
+    .agents
+        .agents-cards .agents-cards-item .agent-info
+            p
+                margin: 0
+            .agent-block
+                flex-direction: column
+                justify-content: center
+                .social
+                    margin-bottom: 10px
+
+    .site-footer
+        &-block
+            flex-direction: column
+            .footer-logo h3
+                font-size: 30px
+            .footer-search
+                margin: 20px 40px 0
+                span
+                    display: none
+        &-links
+            .footer-links-logo
+                margin: 16px 10% 0 0
 
 @media only screen and (max-width: 768px)
     .site-header
@@ -139,8 +182,8 @@
     .stats
         margin-top: 20px
 
-    .apartments .apart
-        .cards-slider
+    .apartments
+        .apart .cards-slider
             justify-content: center
             align-items: center
             .slick-arrow
@@ -163,6 +206,44 @@
                 width: 80%
                 h4
                     margin-top: 20px
+
+    .add
+        &-line
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            &-img
+                width: 90%
+                img
+                    width: 100%
+            &-text
+                width: 80%
+                h3
+                    margin: 20px
+                    margin-left: 0
+                p
+                    margin-left: 0
+                .show-more
+                    display: block
+                    margin: 50px
+                    padding: 20px
+                    text-align: center
+        .add-line-right .add-line-text p
+            margin: 0
+
+    .agents
+        &-cards
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            &-item
+                margin-top: 10px
+
+    .site-footer
+        .site-footer-links
+            flex-direction: column
+            .footer-links-logo
+                margin: 16px 10% 0px 40px
 
 @media only screen and (max-width: 480px)
     .intro
@@ -208,3 +289,24 @@
         h2
             margin: 30px
             font-size: 30px
+
+    .agents h2
+        font-size: 30px
+
+    .add .add-line
+        &-img .location-australia
+            left: 0
+
+    .site-footer
+        &-block
+            .footer-search input[type=text]
+                justify-content: center
+                align-items: center
+                width: 100%
+        hr
+            margin: 40px
+        &-links
+            .footer-links-text
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                grid-template-rows: repeat(2, 1fr)
