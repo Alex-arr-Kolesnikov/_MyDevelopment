@@ -17,6 +17,11 @@
         right: 0
         top: 0
         z-index: 3
+        .line-animation
+            stroke-dasharray: 600
+            stroke-dashoffset: 600
+            animation: animdash 5s infinite 6s
+
 
     .header__aside
         position: absolute
@@ -77,6 +82,7 @@
         left: 210px
         bottom: 40px
         z-index: 3
+
     .header__slider
         &-item
             position: relative
@@ -158,3 +164,10 @@
                 font-weight: 300
                 font-size: 16px
                 line-height: 19px
+    
+@keyframes animdash 
+    to
+        stroke-dashoffset: 0
+
+
+        
