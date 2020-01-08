@@ -7,8 +7,6 @@
         font-weight: 800
         font-size: 200px
         line-height: 156px
-        text-transform: uppercase
-        color: #FFFFFF
         opacity: 0.07
         z-index: 4
 
@@ -28,22 +26,20 @@
         top: 0
         left: 0
         text-align: center
-        color: #fff
         z-index: 5
         border-right: 1px solid rgba(#fff, .25)
         height: 100%
         .menu
             padding-top: 40px
-            a
-                color: #fff
-                span
-                    display: block
-                    padding-top: 6px
-                    margin-bottom: 20px
-                    font-size: 12px
-                    line-height: 14px
-                    letter-spacing: 3px
-                    font-weight: 500
+            span
+                display: block
+                padding-top: 6px
+                margin-bottom: 20px
+                font-size: 12px
+                line-height: 14px
+                letter-spacing: 3px
+                font-weight: 500
+                text-transform: capitalize
         .header__search
             padding-top: 15px
             padding-bottom: 35px
@@ -68,6 +64,7 @@
             font-size: 12px
             line-height: 14px
             letter-spacing: 1.05px
+            text-transform: capitalize
             &::before
                 content: ''
                 position: absolute
@@ -96,24 +93,6 @@
                 right: 80px
                 bottom: 116px
                 text-align: right
-                text-transform: uppercase
-                color: #fff
-                .suptitle-left
-                    position: relative
-                    display: inline-block
-                    padding-left: 103px
-                    font-size: 22px
-                    line-height: 32px
-                    letter-spacing: 7.33333px
-                    opacity: 0.5
-                    &::before
-                        content: ""
-                        position: absolute
-                        width: 80px
-                        height: 1px
-                        top: 50%
-                        left: 0
-                        background-color: #fff
                 &-title
                     margin-top: 5px
                     margin-bottom: 48px
@@ -128,14 +107,6 @@
 
                 &-link
                     text-align: left
-        .slider-arrows
-            position: absolute
-            top: 40px
-            right: 80px
-            cursor: pointer
-            z-index: 4
-        .slider-arrows__left
-            right: 125px
 
     .slider-dots
         position: absolute
@@ -143,7 +114,6 @@
         bottom: 40px
         max-width: 920px
         width: 100%
-        color: #fff
         .slick-current
             .dots-box
                 border-top: 4px solid $green
@@ -164,6 +134,7 @@
                 font-weight: 300
                 font-size: 16px
                 line-height: 19px
+                text-transform: capitalize
     
 @keyframes animdash 
     to
