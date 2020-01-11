@@ -65,3 +65,30 @@ a
     z-index: 4
 .slider-arrows__left
     right: 125px
+.btn
+    font-size: 40px
+    font-weight: 800
+    line-height: 36px
+    span
+        display: inline-block
+        position: relative
+        margin-left: 19px
+        padding: 17px 57px 15px 17px
+        background-color: $green
+        &::before
+            content: ""
+            position: absolute
+            width: 20px
+            height: 1px
+            background-color: #fff
+            top: 50%
+            left: -10px
+        &::after
+            content: ""
+            position: absolute
+            width: 25px
+            height: 21px
+            top: 50%
+            right: 17px
+            transform: translateY(-50%)
+            background-image: url(../../img/header/arrows-right.svg)
