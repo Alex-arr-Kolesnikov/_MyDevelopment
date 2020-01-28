@@ -1,0 +1,150 @@
+.header
+    position: relative    
+    .top_slider
+        
+        .slick-prev
+            position: absolute
+            font-size: 0
+            width: 42px
+            height: 42px
+            border-radius: 100%
+            border: none
+            top: 42%
+            left: 0
+            margin: -21px 0 0 50px
+            background: rgba(0,0,0,0.1) url('../../img/slider/slick-arrows.svg') center center no-repeat
+            z-index: 9999
+            transition: all 0.5s ease
+            &:hover
+                background: #fee489 url('../../img/slider/arrows_hover.svg') center center no-repeat
+                transition: all 0.5s ease
+        .slick-next
+            position: absolute
+            font-size: 0
+            width: 42px
+            height: 42px
+            border-radius: 100%
+            border: none
+            top: 42%
+            right: 0
+            margin: -21px 50px 0 0
+            background: rgba(0,0,0,0.1) url('../../img/slider/slick-arrows.svg') center center no-repeat
+            z-index: 9999
+            transform: scale(-1,1)
+            transition: all 0.5s ease
+            &:hover
+                background: #fee489 url('../../img/slider/arrows_hover.svg') center center no-repeat
+                transition: all 0.5s ease
+
+        figure
+            position: relative
+        figcaption
+            position: absolute
+            display: flex
+            align-items: center
+            justify-content: center
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            .info
+                position: relative
+                max-width: 994px
+                width: 100%
+                padding-left: 90px
+                &::after
+                    content: "olins"
+                    position: absolute
+                    display: flex
+                    align-items: center
+                    justify-content: flex-start
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    font-size: 373px
+                    font-style: italic
+                    font-weight: 900
+                    color: rgba(115, 73, 91, 0.05)
+                .category
+                    display: block
+                    margin-bottom: 20px
+                    line-height: 1
+                    font-size: 21pt
+                    font-style: italic
+                    font-family: 'Playfair Display', serif
+                    color: #7f5568
+                h2
+                    font-size: 45px
+                    color: #000000               
+                    font-weight: 900
+                    text-transform: uppercase
+                    line-height: 1.1
+                .readmore             
+                    font-weight: 500
+                    img
+                        display: inline-block
+                    a
+                        margin-top: 20px
+                        color: #7f5568
+                        text-decoration: underline
+                        &:hover
+                            text-decoration: none
+
+    nav
+        position: absolute
+        display: flex
+        align-items: center
+        justify-content: space-between
+        bottom: 0
+        left: 0
+        width: 100%          
+        height: 90px 
+        background: rgba(115, 72, 92, 0.9)
+        .logo
+            width: 20%
+            margin-left: 45px
+            font-size: 43px
+            color: #fff
+            font-weight: 900
+            font-style: italic;
+        .top_menu
+            width: 60%
+            text-align: center
+            font-size: 0
+            li
+                display: inline-block
+                margin: 0 20px
+                font-size: 13px
+                color: #fff
+                text-transform: uppercase
+                font-weight: 700
+                transition: all 300ms ease-in-out
+                &:hover
+                    color: #fee486
+                    transition: all 300ms ease-in-out
+                .active
+                    color: #fee486                 
+                a
+                    color: inherit
+        .cart
+            display: flex
+            align-items: center
+            margin-right: 45px
+            width: 20%
+            justify-content: flex-end
+            a
+                width: 23px
+                height: 23px  
+                margin-left: 5px
+                text-align: center
+                line-height: 23px
+                border-radius: 100%
+                font-size: 10px
+                color: #7f5669
+                font-family: 'Arial'
+                background: #fee486
+                transition: all 300ms ease-in-out
+                &:hover
+                    background: #fff
+                    transition: all 300ms ease-in-out
