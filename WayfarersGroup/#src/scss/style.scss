@@ -13,12 +13,13 @@
 @import "./main_page/header";
 
 body {
+	position: relative;
 	font-family: "RobotoCondensed", sans-serif;
 }
 
 .container {
 	width: 1130px;
-	margin: 0 auto;
+	margin: auto;
 	padding: 0 15px;
 }
 	
