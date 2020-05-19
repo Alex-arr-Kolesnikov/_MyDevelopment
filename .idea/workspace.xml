@@ -2,21 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5396c0cc-b0f8-4ac1-b035-618b4f54584d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/About_smoothie/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/About_smoothie/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/About_smoothie/app/css/style.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/About_smoothie/app/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/About_smoothie/app/js/libs.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/About_smoothie/app/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/About_smoothie/app/sass/modules/_global.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/About_smoothie/app/sass/style.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/About_smoothie/app/sass/utils/_libs.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/About_smoothie/app/sass/utils/_media.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/About_smoothie/app/sass/utils/_normalize.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/About_smoothie/app/sass/utils/_vars.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/About_smoothie/gulpfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/About_smoothie/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/About_smoothie/package.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/_MyDevelopment.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Beauty_Saloon/_StartNewProject" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Room_project/.idea/Room_project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Room_project/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Room_project/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Room_project/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Room_project/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Room_project/dist/assets/css/app.dbe5c8a8b5102b6f02ad.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Room_project/dist/assets/fonts/RalewayRegular/RalewayRegular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Room_project/dist/assets/fonts/RalewayRegular/RalewayRegular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Room_project/dist/assets/fonts/RalewayRegular/RalewayRegular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Room_project/dist/assets/img/addRoom.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Room_project/dist/assets/img/agents/agent1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Room_project/dist/assets/img/agents/agent2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Room_project/dist/assets/img/agents/agent3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Room_project/dist/assets/img/apartments/apart.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Room_project/dist/assets/img/apartments/arrow-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Room_project/dist/assets/img/apartments/arrow-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Room_project/dist/assets/img/room-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Room_project/dist/assets/img/servisRoom.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Room_project/dist/assets/js/app.dbe5c8a8b5102b6f02ad.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Room_project/dist/assets/js/vendors.dbe5c8a8b5102b6f02ad.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Room_project/dist/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Room_project/dist/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Room_project/dist/static/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Room_project/dist/static/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Luxtrader/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Luxtrader/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OlinsShop/Beginning_of_work_gulp_html/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OlinsShop/Beginning_of_work_gulp_html/app/css/style.min.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OlinsShop/Beginning_of_work_gulp_html/app/img/Cart.svg" beforeDir="false" />
@@ -59,8 +75,18 @@
       <executable />
     </execution>
   </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Luxtrader/.gitignore" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="640" />
@@ -88,7 +114,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -114,24 +142,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589202895122</updated>
-      <workItem from="1589202926484" duration="679000" />
+      <workItem from="1589202926484" duration="1906000" />
+      <workItem from="1589793292046" duration="81000" />
+      <workItem from="1589801261815" duration="622000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="679000" />
+    <option name="totallyTimeSpent" value="2609000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26213592" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" weight="0.32919255" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.54813665" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -139,10 +164,15 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32919255" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.54813665" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,5 +203,28 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Luxtrader/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
