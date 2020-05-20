@@ -2,7 +2,8 @@
 	@font-face {
 		font-family: $font_name;
 		font-display: swap;
-		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+		src: url("../fonts/#{$file_name}.woff") format("woff"),
+		url("../fonts/#{$file_name}.woff2") format("woff2");
 		font-weight: #{$weight};
 		font-style: #{$style};
 	}
@@ -11,15 +12,41 @@
 @import "./utils/fonts";
 @import "./utils/normalize";
 @import "./main_page/header";
+@import "./main_page/privilege";
+@import "./main_page/about.scss";
+
 
 body {
 	position: relative;
+	background: #F3F3F3;
 	font-family: "RobotoCondensed", sans-serif;
 }
 
 .container {
-	width: 1130px;
+	width: 1150px;
 	margin: auto;
 	padding: 0 15px;
 }
-	
+
+.btn {
+	display: block;
+	padding: 15px 50px 15px 50px;
+	border: 1px solid #4FCC3F;
+	border-radius: 4px;
+	margin: 50px auto;
+	text-transform: uppercase;
+	line-height: 1.5;
+	font-size: 16px;
+	color: #fff;
+	cursor: pointer;
+	font-weight: bold;
+	background: transparent;
+	box-shadow: 0 0 10px #4fcc3f, 0 0 20px #4fcc3f;
+
+	&:hover {
+		background-color: #000000;
+		color: #4fcc3f;
+		box-shadow: none;
+		transition: all 0.5s;
+	}
+}
