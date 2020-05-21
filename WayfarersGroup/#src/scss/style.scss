@@ -31,7 +31,7 @@ body {
 .btn {
 	display: block;
 	padding: 15px 50px 15px 50px;
-	border: 1px solid #4FCC3F;
+	border: 2px solid #4FCC3F;
 	border-radius: 4px;
 	margin: 50px auto;
 	text-transform: uppercase;
@@ -49,4 +49,15 @@ body {
 		box-shadow: none;
 		transition: all 0.5s;
 	}
+}
+
+.section_title {
+	h2 {
+        padding: 40px 0 10px;
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 19px;
+    }
 }
