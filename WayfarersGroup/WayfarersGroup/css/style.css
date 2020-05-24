@@ -73,8 +73,11 @@ ol {
 }
 
 ul,
-ol {
+ol,
+li,
+button {
   list-style: none;
+  border: none;
 }
 
 a {
@@ -220,12 +223,6 @@ img {
   margin: 10px 0;
 }
 
-.block_space {
-  width: 100%;
-  border-bottom: 61px solid #0f0f0f;
-  border-right: 96vw solid transparent;
-}
-
 .hot__offer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -328,6 +325,12 @@ img {
           transform: scale(1.2);
 }
 
+.privilege .block_space {
+  width: 100%;
+  border-bottom: 61px solid #0f0f0f;
+  border-right: 96vw solid transparent;
+}
+
 .about {
   text-align: center;
   background: #0f0f0f;
@@ -335,6 +338,12 @@ img {
 
 .about .section_title {
   color: #fff;
+}
+
+.about .block_space {
+  width: 100%;
+  border-bottom: 61px solid #fff;
+  border-left: 96vw solid transparent;
 }
 
 .with_us {
@@ -425,7 +434,7 @@ img {
 
 .with_us .left-2 {
   top: 40%;
-  left: 60px;
+  left: 20px;
 }
 
 .with_us .left-3 {
@@ -440,11 +449,11 @@ img {
 
 .with_us .right-2 {
   top: 40%;
-  right: -25px;
+  right: -30px;
 }
 
 .with_us .right-3 {
-  bottom: 10%;
+  bottom: 3%;
   right: 10px;
 }
 
@@ -452,13 +461,17 @@ img {
   margin-bottom: 20px;
 }
 
+.reviews .slider__box {
+  position: relative;
+}
+
 .reviews .slider__box-item {
-  width: 700px !important;
+  width: 700px;
   margin: 0 auto;
   color: #fff;
 }
 
-.reviews .img_item {
+.reviews .slider__box-item .img_item {
   width: 100px;
   height: 100px;
   margin: 20px 0;
@@ -466,9 +479,56 @@ img {
   border: 1px solid #4fcc3f;
 }
 
-.reviews .title_item {
+.reviews .slider__box-item .title_item {
   color: #4fcc3f;
   font-size: 18px;
+}
+
+.reviews .slider__box .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.reviews .slider__box .slick-dots li button {
+  height: 15px;
+  margin: 10px;
+  font-size: 0;
+  border: 1px solid #4fcc3f;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.reviews .slider__box .slick-dots .slick-active button {
+  background: #4fcc3f;
+}
+
+.reviews .slider__box .slick-arrow {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 60px;
+  margin-top: -60px;
+  font-size: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.reviews .slider__box .slick-prev {
+  left: 10%;
+  background: url(../../img/about/slider-prev.svg) no-repeat;
+}
+
+.reviews .slider__box .slick-next {
+  background: url(../../img/about/slider-next.svg) no-repeat;
+  right: 10%;
 }
 
 html {
@@ -523,8 +583,8 @@ body {
   font-size: 19px;
 }
 
-.slick-slider {
-  min-width: 0;
+.slick-list {
+  overflow: hidden;
 }
 
 .slick-track {

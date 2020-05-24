@@ -14,12 +14,6 @@
     }
 }
 
-.block_space {
-    width: 100%;
-    border-bottom: 61px solid #0f0f0f;
-    border-right: 96vw solid transparent;
-}
-
 .hot__offer {
     display: flex;
     flex-direction: column;
@@ -93,4 +87,10 @@
     }
     
     &:hover .item_bg { transform: scale(1.2); }
+}
+
+.privilege .block_space {
+    width: 100%;
+    border-bottom: 61px solid #0f0f0f;
+    border-right: 96vw solid transparent;
 }

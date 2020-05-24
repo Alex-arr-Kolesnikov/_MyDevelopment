@@ -25,8 +25,9 @@ body, p, li, figure, figcaption, ul, ol {
   padding: 0;
 }
 
-ul, ol {
+ul, ol, li, button {
   list-style: none;
+  border: none;
 }
 
 a {
