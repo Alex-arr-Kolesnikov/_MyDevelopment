@@ -11,11 +11,13 @@
 
 @import "./utils/fonts";
 @import "./utils/normalize";
+//@import "./utils/slick";
 @import "./main_page/header";
 @import "./main_page/privilege";
 @import "./main_page/about.scss";
 
-
+html { scroll-behavior: smooth; }
+	 
 body {
 	position: relative;
 	background: #F3F3F3;
@@ -61,3 +63,6 @@ body {
         font-size: 19px;
     }
 }
+
+.slick-slider{ min-width: 0; }
+.slick-track { display: flex; }

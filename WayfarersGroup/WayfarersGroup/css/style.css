@@ -47,7 +47,7 @@ body {
   position: relative;
   min-width: 320px;
   min-height: 100vh;
-  font-size: 14px;
+  font-size: 16px;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
 }
@@ -448,6 +448,33 @@ img {
   right: 10px;
 }
 
+.reviews .section_title {
+  margin-bottom: 20px;
+}
+
+.reviews .slider__box-item {
+  width: 700px !important;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.reviews .img_item {
+  width: 100px;
+  height: 100px;
+  margin: 20px 0;
+  border-radius: 50%;
+  border: 1px solid #4fcc3f;
+}
+
+.reviews .title_item {
+  color: #4fcc3f;
+  font-size: 18px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   background: #F3F3F3;
@@ -494,4 +521,14 @@ body {
 
 .section_title p {
   font-size: 19px;
+}
+
+.slick-slider {
+  min-width: 0;
+}
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }

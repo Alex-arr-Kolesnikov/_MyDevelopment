@@ -60,3 +60,28 @@
     .right-2 { top: 40%; right: -25px; }
     .right-3 { bottom: 10%; right: 10px; }
 }
+
+.reviews {
+    .section_title { margin-bottom: 20px; }
+
+    .slider__box {
+        &-item {
+            width: 700px !important;
+            margin: 0 auto;
+            color: #fff;
+        }
+        
+    }
+ 
+    .img_item {
+        width: 100px;
+        height: 100px;
+        margin: 20px 0;
+        border-radius: 50%;
+        border: 1px solid #4fcc3f;
+    }
+    .title_item {
+        color: #4fcc3f;
+        font-size: 18px;
+    }
+}
