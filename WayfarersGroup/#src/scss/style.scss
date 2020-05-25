@@ -9,12 +9,19 @@
 	}
 }
 
+$maxWidth: 1150;
+@mixin adaptiv-font($pcSize, $mobSize) {
+ $addSize: $pcSize - $mobSize;
+ $maxWidth: $maxWidth - 320;
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
 @import "./utils/fonts";
 @import "./utils/normalize";
-//@import "./utils/slick";
 @import "./main_page/header";
 @import "./main_page/privilege";
-@import "./main_page/about.scss";
+@import "./main_page/about";
+@import "./main_page/info";
 
 html { scroll-behavior: smooth; }
 	 
@@ -54,14 +61,13 @@ body {
 }
 
 .section_title {
+	text-align: center;
 	h2 {
         padding: 40px 0 10px;
-        font-size: 30px;
+		@include adaptiv-font (30, 20);
     }
 
-    p {
-        font-size: 19px;
-    }
+    p { @include adaptiv-font (19, 16); }
 }
 
 .slick-list { overflow: hidden; }

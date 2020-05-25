@@ -6,7 +6,7 @@
 
     .block_space {
         width: 100%;
-        border-bottom: 61px solid #fff;
+        border-bottom: 61px solid #F3F3F3;
         border-left: 96vw solid transparent;
     }
 }
@@ -46,7 +46,7 @@
             span {
                 color: #4fcc3f;
                 font-weight: bold;
-                font-size: 20px;
+        		@include adaptiv-font (20, 14);
             }
         }
 
@@ -102,7 +102,7 @@
         
             .title_item {
                 color: #4fcc3f;
-                font-size: 18px;
+        		@include adaptiv-font (18, 14);
             }
         }
 
@@ -111,15 +111,15 @@
             justify-content: center;
             align-items: center;
             margin-top: 30px;
-            li button {
-                height: 15px;
+            li {
+                width: 14px;
+                height: 14px;
                 margin: 10px;
-                font-size: 0;
                 border: 1px solid #4fcc3f;
                 border-radius: 50%;
-                background: transparent;
             }
-            .slick-active button { background: #4fcc3f; }
+            button { font-size: 0; }
+            .slick-active { background: #4fcc3f; }
         }
 
         .slick-arrow {

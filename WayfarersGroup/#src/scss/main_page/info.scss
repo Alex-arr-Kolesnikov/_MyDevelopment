@@ -1,0 +1,108 @@
+.info__box {
+    display: flex;
+
+    .section_title { padding-right: 30px; }
+
+    &-aside {
+        min-width: 430px;
+        padding-top: 20px;
+        margin: 40px 0;
+        text-align: center;
+        box-shadow: 0 0 10px #4fcc3f,0 0 20px #4fcc3f;
+    }
+
+    .aside__box {
+        display: flex;
+        flex-wrap: wrap;
+
+        &-item {
+            min-width: 185px;
+            text-align: center;
+            margin: 15px;
+            border: 1px solid #4fcc3f;
+        }
+
+        h3 {
+            background: #0f0f0f;
+            color: #4fcc3f;
+            padding: 5px 10px;
+        }
+
+        a {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #4fcc3f;
+            color: #0f0f0f;
+            &:hover {
+                transition: all 0.5s;
+                box-shadow: 0 0 10px #4fcc3f, 0 0 20px #4fcc3f;
+            }
+        }
+    }
+}
+
+.slider__agents {
+    position: relative;
+    padding-bottom: 40px;
+    .slick-arrow {
+        position: absolute;
+        bottom: 0;
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 60px;
+        cursor: pointer;
+        z-index: 5;
+        color: #4fcc3f;
+        background: transparent;
+    }
+    .slick-next {
+        right: 30%;
+    }
+    .slick-prev {
+        left: 30%;
+    }
+
+    &-item {
+        position: relative;
+        margin: 20px;
+        text-align: center;
+        img {
+            position: absolute;
+            top: 25px;
+            left: 93px;
+            border-radius: 50%;
+        }
+
+        .profile {
+            padding: 25px;
+            margin-top: 151px;
+            background: #fff;
+            border: 1px solid #4fcc3f;
+            box-shadow: 0 0 10px #4fcc3f,0 0 20px #4fcc3f;
+        }
+    }
+}
+
+.box__work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &-item {
+        text-align: center;
+        width: 260px;
+        margin: 10px;
+        padding: 10px;
+        img {
+            width: 61px;
+            height: 61px;
+        }
+        h3 { color: #4fcc3f; }
+    }
+}
+
+.info .block_space {
+    width: 100%;
+    border-bottom: 61px solid #0f0f0f;
+    border-right: 96vw solid transparent;
+}
