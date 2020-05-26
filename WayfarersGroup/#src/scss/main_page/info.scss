@@ -8,6 +8,7 @@
         padding-top: 20px;
         margin: 40px 0;
         text-align: center;
+        border-radius: 5px;
         box-shadow: 0 0 10px #4fcc3f,0 0 20px #4fcc3f;
     }
 
@@ -67,6 +68,10 @@
         position: relative;
         margin: 20px;
         text-align: center;
+        transition: all 0.5s;
+
+        &:hover { box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); }
+
         img {
             position: absolute;
             top: 25px;
@@ -93,6 +98,7 @@
         width: 260px;
         margin: 10px;
         padding: 10px;
+        
         img {
             width: 61px;
             height: 61px;

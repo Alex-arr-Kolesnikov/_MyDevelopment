@@ -59,31 +59,31 @@
         color: #fff;
 		@include adaptiv-font (22, 18);
     }
+}
 
-    .header_social_block {
+.header_social_block {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    a {
         display: flex;
         justify-content: center;
-        margin-top: 30px;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        margin: 15px;
+        border: 1px solid #4FCC3F;
+        border-radius: 50%;
 
-        a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 40px;
-            height: 40px;
-            margin: 15px;
-            border: 1px solid #4FCC3F;
-            border-radius: 50%;
+        &:hover {
+            box-shadow: 0 0 10px #4fcc3f, 0 0 20px #4fcc3f;
+            transition: all 0.5s;
+            background: #000;
+        }
 
-            &:hover {
-                box-shadow: 0 0 10px #4fcc3f, 0 0 20px #4fcc3f;
-                transition: all 0.5s;
-                background: #000;
-            }
-
-            img {
-                height: 25px;
-            }
+        img {
+            height: 25px;
         }
     }
 }
