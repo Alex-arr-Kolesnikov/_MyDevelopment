@@ -11,33 +11,35 @@
 
 $maxWidth: 1150;
 @mixin adaptiv-font($pcSize, $mobSize) {
- $addSize: $pcSize - $mobSize;
- $maxWidth: $maxWidth - 320;
- font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 320;
+	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
 }
 
 @import "./utils/fonts";
 @import "./utils/normalize";
 @import "./main_page/header";
+@import "./main_page/header-body";
 @import "./main_page/privilege";
 @import "./main_page/about";
 @import "./main_page/info";
 @import "./main_page/contacts";
 @import "./main_page/footer";
+@import "./utils/media";
 
 
 html { scroll-behavior: smooth; }
 	 
 body {
-	position: relative;
 	background: #F3F3F3;
 	font-family: "RobotoCondensed", sans-serif;
+	overflow-x: hidden;
 }
 
-.container {
-	width: 1150px;
-	margin: auto;
-	padding: 0 15px;
+section {
+	position: relative;
+	padding: 0 calc(50% - 575px);
+	background-size: cover;
 }
 
 .btn {
@@ -56,7 +58,7 @@ body {
 	box-shadow: 0 0 10px #4fcc3f, 0 0 20px #4fcc3f;
 
 	&:hover {
-		background-color: #000000;
+		background-color: #333;
 		color: #4fcc3f;
 		box-shadow: none;
 		transition: all 0.5s;

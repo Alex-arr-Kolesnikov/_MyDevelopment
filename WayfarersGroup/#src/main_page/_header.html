@@ -4,35 +4,39 @@
         <img class="header_logo" src="./img/header/my_logo.png" alt="logo-Ww">
     </a>
 
-    <nav class="main_menu">
-        <ul>
-            <li><a href="/">Главная</a></li>
-            <li><a href="#about">О нас</a></li>
-            <li><a href="#info">Инфо</a></li>
-            <li><a href="#contacts">Контакты</a></li>
-        </ul>
+    <nav class="nav">
+        <input id="checkbox" type="checkbox">
+
+        <label for="checkbox">
+            <div class="burger">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+                <span class="line line4"></span>
+            </div>
+        </label>
+
+        <div class="nav__content">
+            <ul class="nav__items">
+
+                <li class="nav__item">
+                    <a href="/" class="nav__item-text">Главная</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#about" class="nav__item-text">О нас</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#info" class="nav__item-text">Инфо</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#contacts" class="nav__item-text">Контакты</a>
+                </li>
+            </ul>
+        </div>
+
     </nav>
 
 </header>
-
-<section class="main__header">
-    <div class="container">
-        <!--<iframe class="header_bg" src="https://www.youtube.com/embed/pbOVSupIkFE?controls=0&amp;start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-        <div class="header_overley">
-            <img class="header_bg" src="./img/header/header_bg.png" alt="header_bg">
-        </div>
-
-        <h1 class="header_title">"Сделай шаг, и дорога появится сама собой." ( Стив Джобс )​</h1>
-        <p class="header_subtitle">Новое слово в перевозках. WayfarerGroup - компания, которая не боится даже самых
-            сложных и требовательных вызовов.</p>
-
-        <div class="header_social_block">
-            <a href="#"><img src="./img/icons/facebook.svg" alt="facebook"></a>
-            <a href="#"><img src="./img/icons/telegram.svg" alt="twitter"></a>
-            <a href="#"><img src="./img/icons/instagram.svg" alt="google"></a>
-        </div>
-
-        <button class="btn">Сделать шаг</button>
-
-    </div>
-</section>
