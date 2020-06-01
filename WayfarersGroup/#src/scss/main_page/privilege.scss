@@ -1,5 +1,6 @@
 .privilege__box {
     display: flex;
+    justify-content: center;
 
     &-item {
         width: 250px;
@@ -88,7 +89,7 @@
     &:hover .item_bg { transform: scale(1.2); }
 }
 
-.privilege .block_space {
+.block_space1 {
     width: 100%;
     border-bottom: 61px solid #0f0f0f;
     border-right: 96vw solid transparent;
