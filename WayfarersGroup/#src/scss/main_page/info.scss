@@ -1,5 +1,8 @@
 .info__box {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 
     .section_title { padding-right: 30px; }
 
@@ -17,9 +20,10 @@
         flex-wrap: wrap;
 
         &-item {
-            min-width: 185px;
+            width: calc((100% - 60px)/2);
+            height: 180px;
             text-align: center;
-            margin: 15px;
+            margin: 15px auto;
             border: 1px solid #4fcc3f;
         }
 
@@ -66,6 +70,7 @@
 
     &-item {
         position: relative;
+        max-width: 344px;
         margin: 20px;
         text-align: center;
         transition: all 0.5s;
@@ -75,13 +80,16 @@
         img {
             position: absolute;
             top: 25px;
-            left: 93px;
+            left: 0;
+            right: 0;
+            margin: auto;
             border-radius: 50%;
         }
 
         .profile {
             padding: 25px;
             margin-top: 151px;
+            min-height: 151px;
             background: #fff;
             border: 1px solid #4fcc3f;
             box-shadow: 0 0 10px #4fcc3f,0 0 20px #4fcc3f;

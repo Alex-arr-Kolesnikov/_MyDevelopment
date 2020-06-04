@@ -18,6 +18,12 @@ $(document).ready(function () {
 		speed: 1000,
 		autoplaySpeed: 5000,
 		prevArrow: '<button type="button" class="slick-prev">&#8668</button>',
-		nextArrow: '<button type="button" class="slick-next">&#8669</button>'
+		nextArrow: '<button type="button" class="slick-next">&#8669</button>',
+		responsive: [{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1
+			}
+		}] 
 	});
 });

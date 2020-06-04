@@ -40,7 +40,6 @@
             span {
                 color: #4fcc3f;
                 font-weight: bold;
-                white-space: nowrap;
         		@include adaptiv-font (22, 18);
             }
         }
@@ -89,6 +88,8 @@
             margin: 0 auto;
             color: #fff;
 
+            .text_item { padding: 0 50px; }
+
             .img_item {
                 width: 100px;
                 height: 100px;
@@ -121,7 +122,7 @@
 
         .slick-arrow {
             position: absolute;
-            top: 50%;
+            bottom: 30%;
             width: 50px;
             height: 60px;
             margin-top: -60px;
@@ -130,12 +131,12 @@
             z-index: 1;
         }
         .slick-prev {
-            left: 10%;
-            background: url(../img/about/slider-prev.svg) no-repeat;
+            left: 30%;
+            background: url(../img/about/slider-prev.svg) center no-repeat;
         }
         .slick-next {
-            background: url(../img/about/slider-next.svg) no-repeat;
-            right: 10%;
+            background: url(../img/about/slider-next.svg) center no-repeat;
+            right: 30%;
         }
 
     }   
