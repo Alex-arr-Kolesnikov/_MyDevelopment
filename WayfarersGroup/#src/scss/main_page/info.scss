@@ -38,6 +38,7 @@
             padding: 10px;
             border: 1px solid #4fcc3f;
             color: #0f0f0f;
+            transition: all .5s;
             &:hover {
                 transition: all 0.5s;
                 box-shadow: 0 0 10px #4fcc3f, 0 0 20px #4fcc3f;

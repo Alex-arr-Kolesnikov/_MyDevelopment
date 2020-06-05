@@ -55,8 +55,6 @@
     .hot__offer-box {
         flex-direction: column;
         align-items: center;
-
-        .box_item { margin-bottom: 20px; }
     }
 
     .with_us {
@@ -90,6 +88,10 @@
         .aside__box-item { width: calc((100% - 60px)/2); } 
     }
 
+    .slider__agents .slick-prev { left: 15%; }
+
+    .slider__agents .slick-next { right: 15%; }
+    
     .slider__agents-item { margin: 20px auto; }
 
     .contacts .item__box { flex-flow: wrap; }

@@ -4,7 +4,7 @@
     justify-content: center;
     height: 100vh;
     padding-top: 200px;
-    background-image: url('../img/header/header_bg.png');
+    background-image: url('../img/header/header_bg.jpg');
 }
 
 .header__content {
@@ -41,6 +41,7 @@
         margin: 15px;
         border: 1px solid #4FCC3F;
         border-radius: 50%;
+        transition: all .5s;
 
         &:hover {
             box-shadow: 0 0 10px #4fcc3f, 0 0 20px #4fcc3f;
