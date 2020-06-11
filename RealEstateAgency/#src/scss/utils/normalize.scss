@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+  &:before, &:after {
+    box-sizing: border-box;
+    outline: none;
+  }
+}
+
+html, body { scroll-behavior: smooth; }
+
+body {
+  position: relative;
+  min-width: 320px;
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.4;
+  text-rendering: optimizeSpeed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+body, p, li, figure, figcaption, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}

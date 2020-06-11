@@ -1,0 +1,90 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    &__logo {
+        padding: 0 20px;
+        transition: background .3s linear;
+        font-size: 25px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        &:hover { background: #8974e6; color: #fff; }
+
+    }
+    &__join, &__started {
+        padding: 0 20px;
+        white-space: nowrap;
+        border-radius: 5px;
+        border: 1px solid #8974e6;
+        transition: background .3s linear;
+        &:hover { background: #8974e6; color: #fff; }
+    }
+}
+
+.menu {
+    width: 100%;
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        
+
+        li { white-space: nowrap; }
+
+        a {
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 20px;
+            transition: background .3s linear;
+            &:hover { background: #8974e6; color: #fff; }
+            
+        }
+    }
+
+    .burger {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+
+        .line {
+            position: absolute;
+            display: block;
+            width: 30px;
+            height: 4px;
+			border-radius: 4px;
+            background-color: #fff;
+            transition: all .4s;
+        }
+        .line2, .line3 { top: 13px; }
+        .line4 { bottom: 0; }
+    }
+
+    #checkbox, .burger { display: none; }
+
+    #checkbox:checked + label > .burger > .line1 {
+		transform: rotate(45deg);
+		transform-origin: 5%;
+		width: 41px;
+    }
+	#checkbox:checked + label > .burger > .line2 {
+		transform: translateX(-40px);
+		background-color: transparent;
+    }
+	#checkbox:checked + label > .burger > .line3{
+		transform: translateX(40px);
+		background-color: transparent;
+    }
+	#checkbox:checked + label > .burger > .line4 { 
+		transform-origin: 5%;
+		transform: rotate(-45deg);
+		width: 41px;
+    }
+	#checkbox:checked ~ .menu__box {
+        max-height: 300px;
+        font-size: 16px;
+    }
+}

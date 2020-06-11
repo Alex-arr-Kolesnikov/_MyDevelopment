@@ -1,0 +1,120 @@
+.apartments__slider {
+    position: relative;
+    padding: 20px 0 50px;
+    overflow: hidden;
+    .slick-track { display: flex; }
+
+    .slick-arrow {
+        position: absolute;
+        bottom: 0;
+        width: 2.5rem;
+        height: 3rem;
+        margin: 10px 0 10px;
+        background: #fff;
+        border: none;
+        outline: none;
+        transition: all .3s linear;
+        z-index: 1;
+    }
+    .slick-prev {
+        left: 45%;
+        border: 1px solid #7b60f5;
+        border-radius: 50% 0 0 50%;
+        &:hover {
+            box-shadow: 0 0 10px #7b60f5, 0 0 40px #7b60f5;
+        }
+    }
+
+    .slick-next {
+        right: 45%;
+        border: 1px solid #7b60f5;
+        border-radius: 0 50% 50% 0;
+        &:hover {
+            box-shadow: 0 0 10px #7b60f5, 0 0 40px #7b60f5;
+        }
+    }                 
+}
+
+.card__box {
+    margin: 5px 5px 20px;
+    transition: all .2s linear;
+    &:hover {
+        background: #fafaf9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    }
+
+    img { height: 300px; }
+
+    &-item {
+        padding: 25px;
+        p {padding-bottom: 20px;}
+    }
+
+    &-info {
+        display: flex;
+        justify-content: space-between;
+
+        .money {
+            font-size: 18px;
+            color: #7b60f5;
+            font-weight: bold;
+        }
+                                
+        .info {
+            span:first-child { margin-right: 18px; }
+            i { margin-right: 8px; }
+        }
+    }                 
+}
+
+.button-search {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 400px;
+        border: 1px solid #8974e6;
+        border-radius: 8px;
+
+    }
+
+    i {
+        padding: 10px;
+        color: #919eb1;
+    }
+                
+    form input[type=text] {
+        width: 100%;
+        height: 60px;
+        border: none;
+    }
+                
+    form input[type=submit] {
+        padding: 0 30px;
+        height: 60px;
+        background: #8974e6;
+        border: none;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        transition: all .3s linear;
+
+        &:hover, &:focus, &:active {
+            color: #fff;
+            box-shadow: 0 0 10px #7b60f5, 0 0 40px #7b60f5;
+        }
+    }
+               
+    .all {
+        width: 250px;
+        text-align: center;
+        line-height: 60px;
+        border-radius: 8px;
+        border: 1px solid #8974e6;
+        transition: all .3s linear;
+
+        &:hover, &:focus, &:active { box-shadow: 0 0 10px #7b60f5, 0 0 40px #7b60f5 }
+    }
+}

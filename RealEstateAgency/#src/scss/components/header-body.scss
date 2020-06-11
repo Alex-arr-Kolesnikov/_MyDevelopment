@@ -1,0 +1,29 @@
+.header__body {
+    margin-top: 20px;
+    &-title {
+        position: absolute;
+        width: 480px;
+        padding-top: 90px;
+        font-size: 62px;
+        z-index: 1;
+    }
+
+    &-bg {
+        position: relative;
+        img {
+            padding-left: 134px;
+            border-bottom-left-radius: 50%;
+            border-top-right-radius: 50%;
+        }
+    } 
+     
+    &-contacts {
+        position: absolute;
+        bottom: -20px;
+        right: 0;
+        font-size: 20px;
+        background-color: #8974e6;
+        span { display: inline-block; padding: 20px; }
+        i { padding-right: 10px; color: #fff; }
+    }
+}

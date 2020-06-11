@@ -1,0 +1,57 @@
+@media only screen and (max-width: 1200px) {
+    header, main, section, footer {
+        padding: 0 calc(50% - 440px);
+    }
+
+}
+@media only screen and (max-width: 992px) {
+    header, main, section, footer {
+        padding: 0 calc(50% - 380px);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header, main, section, footer {
+        padding: 0 calc(50% - 160px);
+    }
+
+    .header {
+        margin: 0;
+        padding-top: 50px;
+        justify-content: center;
+        &__logo { padding: 10px 0 20px; }
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #8974e6;
+
+        &__box {
+            max-height: 0;
+            font-size: 0;
+            overflow: hidden;
+            transition: all .5s
+        }
+
+        &__content {
+            flex-direction: column;
+            height: auto;
+            padding: 10px 20px;
+        }
+
+        a {
+            width: 100%;
+            text-align: center;
+            &:hover {
+                border: 2px solid #fff;
+            }
+        }
+
+        li { width: 100%; }
+        label { display: block; padding: 5px; }
+        .burger { display: block; }
+    }
+}
