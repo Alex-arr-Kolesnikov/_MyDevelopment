@@ -1,0 +1,28 @@
+.agents__box {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.agent__item {
+    transition: all .2s linear;
+
+    &:hover { box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); }
+
+    &-info { padding: 20px; }
+
+    &-descr {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0 0;
+    }
+
+    .name { color: #8974e6; font-style: italic; }
+
+    .social a { 
+        padding: 0 10px;
+        color: #8974e6;
+        font-size: 30px;
+    }
+}

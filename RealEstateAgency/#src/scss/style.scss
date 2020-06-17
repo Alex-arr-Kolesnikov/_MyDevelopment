@@ -23,6 +23,10 @@ $maxWidth: 110;
 @import "./components/stats";
 @import "./components/apartments";
 @import "./components/steps";
+@import "./components/services";
+@import "./components/agents";
+@import "./components/add";
+@import "./components/footer";
 
 header, main, section, footer {
 	position: relative;
@@ -40,7 +44,15 @@ body {
 }
 	
 .section-title {
-	width: 360px;
+	width: 425px;
 	font-size: 40px;
-
+	text-transform: uppercase;
+	border-bottom-left-radius: 50%;
+	border-top-right-radius: 50%;
+}
+.subtitle {
+	display: block;
+	width: 40%;
+	padding: 20px 0 10px;
+	line-height: 1.75;
 }
