@@ -9,6 +9,9 @@
 
     &__line {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        
         .square {
             display: flex;
             flex-direction: column;

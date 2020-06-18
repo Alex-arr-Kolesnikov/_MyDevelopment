@@ -4,10 +4,12 @@
 
     &-img {
         position: relative;
+        
         img {
             border-bottom-right-radius: 50%;
             border-top-left-radius: 50%;
         }
+
         .location{
             position: absolute;
             bottom: -25px;
@@ -22,7 +24,7 @@
 
     &-text {
         width: 50%;
-        padding-left: 100px;
+        padding-left: 50px;
         line-height: 1.75;
 
         h3 {
@@ -48,9 +50,7 @@
 
     &:nth-child(2) {
         flex-direction: row-reverse;
-        .add__box-text {
-            padding-left: 0;
-            padding-right: 100px;
-        }
+
+        .add__box-text { padding: 30px 50px 0 0; }
     }      
 }

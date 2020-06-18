@@ -1,25 +1,51 @@
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
     header, main, section, footer {
         padding: 0 calc(50% - 440px);
     }
 
 }
-@media only screen and (max-width: 992px) {
+@media (max-width: 992px) {
     header, main, section, footer {
         padding: 0 calc(50% - 380px);
     }
+
+    .stats, .steps__box, .services__content { flex-direction: column; }
+
+    .steps__item { margin: 10px 100px; }
+
+    .services__content-text {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .agent__item-descr { flex-direction: column; }
+
+    .agent__item .social a {
+        padding: 0 5px;
+        font-size: 18px;
+    }
+
+    .footer .btn-up { right: 20px; }
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     header, main, section, footer {
-        padding: 0 calc(50% - 160px);
+        padding: 0 calc(50% - 230px);
     }
+
+    section { margin-top: 50px; }
 
     .header {
         margin: 0;
         padding-top: 50px;
-        justify-content: center;
-        &__logo { padding: 10px 0 20px; }
+
+        &__logo, &__actions { padding: 10px 0 20px; }
+
+        &__body-bg img {
+            padding-left: 0;
+
+        }
     }
 
     .menu {
@@ -28,6 +54,7 @@
         left: 0;
         right: 0;
         background-color: #8974e6;
+        z-index: 10;
 
         &__box {
             max-height: 0;
@@ -53,5 +80,56 @@
         li { width: 100%; }
         label { display: block; padding: 5px; }
         .burger { display: block; }
+    }
+
+    .button-search {
+        flex-direction: column-reverse;
+
+        form { margin: 20px 0; width: inherit; }
+    }
+
+    .steps__item { margin: 10px 0; }
+
+    .add__box:nth-child(2), .add__box {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .add__box-text {
+        width: 100%;
+        padding: 30px 0 0 0;
+    }
+    
+    .footer__top { flex-direction: column; }
+
+    .footer__search { height: 50px; }
+
+}
+
+@media (max-width: 480px) {
+    header, main, section, footer {
+        padding: 0 calc(50% - 140px);
+    }
+
+    .section-title { max-width: 280px; }
+
+    .header { justify-content: center; }
+
+    .header__body {
+        &-title { padding-top: 10px; }
+
+        &-contacts {
+            a { padding: 10px 20px; }
+            position: inherit;
+        }
+    }
+
+    .stats__line, .agents__box { flex-direction: column; }
+
+    .footer__links {
+        flex-wrap: wrap;
+        margin: 30px 10px 0;
+        
+        &-item { margin: 10px 20px; }
     }
 }

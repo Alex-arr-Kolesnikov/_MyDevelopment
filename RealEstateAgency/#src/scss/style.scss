@@ -8,7 +8,7 @@
 	}
 }
 
-$maxWidth: 110;
+$maxWidth: 1100;
 @mixin adaptiv-font($pcSize, $mobSize) {
 	$addSize: $pcSize - $mobSize;
 	$maxWidth: $maxWidth - 320;
@@ -44,15 +44,14 @@ body {
 }
 	
 .section-title {
-	width: 425px;
-	font-size: 40px;
+	max-width: 365px;
 	text-transform: uppercase;
 	border-bottom-left-radius: 50%;
 	border-top-right-radius: 50%;
+	@include adaptiv-font (40, 28);
 }
 .subtitle {
 	display: block;
-	width: 40%;
 	padding: 20px 0 10px;
 	line-height: 1.75;
 }
