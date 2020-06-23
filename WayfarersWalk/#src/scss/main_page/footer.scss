@@ -1,0 +1,18 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #0f0f0f;
+    padding: 50px;
+
+    .header_logo { width: 210px; }
+
+    .header_social_block { margin: 0; }
+
+    .footer__phones {
+        width: 210px;
+        color: #4fcc3f;
+        white-space: pre;
+        font-size: 20px;
+    }
+}
