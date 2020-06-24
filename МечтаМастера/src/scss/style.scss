@@ -9,7 +9,7 @@
 	}
 }
 
-$maxWidth: 1170;
+$maxWidth: 1180;
 @mixin adaptiv-font($pcSize, $mobSize) {
 	$addSize: $pcSize - $mobSize;
 	$maxWidth: $maxWidth - 320;
@@ -30,7 +30,7 @@ body {
 
 header, section {
 	position: relative;
-	padding: 0 calc(50% - 585px);
+	padding: 0 calc(50% - 590px);
 	background-size: cover;
 }
 
