@@ -18,6 +18,7 @@ $maxWidth: 1170;
 
 @import "./utils/fonts";
 @import "./utils/normalize";
+@import "./utils/media";
 @import "./components/header";
 
 html { scroll-behavior: smooth; }

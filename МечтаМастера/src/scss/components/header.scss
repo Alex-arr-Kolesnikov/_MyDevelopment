@@ -3,10 +3,117 @@
     justify-content: space-between;
     align-items: center;
     height: 100px;
+    background-color: #333;
 
-    &__menu { width: 100px; } 
 
-    &__logo img {
-        width: 100px;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        color: #fff01f;
+        font-weight: bold;
+    	@include adaptiv-font (32, 24);
+        
+        img { width: 100px; }
     }
+
+    &__menu {
+        max-width: 100%;
+        &-content {
+            display: flex;
+            align-items: center;
+
+        }
+
+        &-item { padding: 10px; }
+
+        a {
+            padding: 10px 0;
+            color: #fff;
+            transition: all .8s;
+
+            &:hover, &:active, &:focus {
+                color: #fff01f;
+                border-top: 2px solid #fff01f;
+                border-bottom: 2px solid #fff01f;
+                transition: all .8s;
+            }
+
+        }
+
+        .burger {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            margin: 0 auto;
+    
+            .line {
+                position: absolute;
+                display: block;
+                width: 30px;
+                height: 4px;
+                border-radius: 4px;
+                background-color: #fff;
+                transition: all .4s;
+            }
+
+            .line2, .line3 { top: 13px; }
+            .line4 { bottom: 0; }
+        }
+    
+        #checkbox, .burger { display: none; }
+
+        #checkbox:checked + label > .burger > .line1 {
+            transform: rotate(45deg);
+            transform-origin: 5%;
+            width: 41px;
+        }
+        #checkbox:checked + label > .burger > .line2 {
+            transform: translateX(-40px);
+            background-color: transparent;
+        }
+        #checkbox:checked + label > .burger > .line3{
+            transform: translateX(40px);
+            background-color: transparent;
+        }
+        #checkbox:checked + label > .burger > .line4 { 
+            transform-origin: 5%;
+            transform: rotate(-45deg);
+            width: 41px;
+        }
+        #checkbox:checked ~ .header__menu-box {
+            max-height: 300px;
+            font-size: 16px;
+        }
+    } 
+
+    &__actions {
+        display: flex;
+        align-items: center;
+
+        &-phone {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-btn {
+            margin-left: 20px;
+            padding: 10px;
+            background: transparent;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: 2px solid #fff01f;
+            transition: all .8s;
+            &:hover {
+                color: #000;
+                background-color: #fff01f;
+            }
+        }
+
+        a { color: #fff; }
+    }
+    
 }
