@@ -1,0 +1,100 @@
+.header {
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 calc(50% - 472px);
+    background-color: #40b583;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      font-size: 36px;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      .ellipse { margin-right: 18px; }
+    }
+
+  }
+
+  &__menu {
+    max-width: 100%;
+
+    &-content {
+      display: flex;
+      align-items: center;
+
+    }
+
+    &-item { padding: 10px; }
+
+    a {
+      padding: 8px 0 6px;
+      color: #fff;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-bottom: 2px solid transparent;
+
+      &:hover, &:active, &:focus {
+        border-bottom: 2px solid #fff;
+      }
+    }
+
+    .ellipse {
+      width: 13px;
+      height: 13px;
+      margin: 0 20px;
+      padding: 3px;
+      border: 2px solid #fff;
+    }
+
+    .burger {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      margin: 0 auto;
+
+      .line {
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 4px;
+        border-radius: 4px;
+        background-color: #000;
+        transition: all .4s;
+      }
+
+      .line2, .line3 { top: 13px; }
+      .line4 { bottom: 0; }
+    }
+
+    #checkbox, .burger { display: none; }
+
+    #checkbox:checked + label > .burger > .line1 {
+      transform: rotate(45deg);
+      transform-origin: 5%;
+      width: 41px;
+    }
+    #checkbox:checked + label > .burger > .line2 {
+      transform: translateX(-40px);
+      background-color: transparent;
+    }
+    #checkbox:checked + label > .burger > .line3{
+      transform: translateX(40px);
+      background-color: transparent;
+    }
+    #checkbox:checked + label > .burger > .line4 {
+      transform-origin: 5%;
+      transform: rotate(-45deg);
+      width: 41px;
+    }
+    #checkbox:checked ~ .header__menu-box {
+      max-height: 350px;
+      font-size: 16px;
+    }
+  }
+}

@@ -17,15 +17,31 @@ $maxWidth: 942;
 
 @import "./utils/fonts";
 @import "./utils/normalize";
+@import "./components/header";
+@import "./components/header-content";
 
 body {
-	font-family: "RobotoCondensed", sans-serif;
+	font-family: "ttfDosis", sans-serif;
 	color: #000;
 }
-header, section, footer {
-	position: relative;
+section, footer {
 	background-size: cover;
 	background-position: center;
 	padding: 0 calc(50% - 472px);
-	border: 1PX solid red;
+}
+
+.ellipse {
+	width: 36px;
+	height: 36px;
+	padding: 10px;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	
+	span {
+		display: block;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		background-color: #fff;
+	}
 }
