@@ -2,10 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
     background-color: #333;
-
-
 
     &__logo {
         display: flex;
@@ -13,9 +10,10 @@
         text-transform: capitalize;
         color: #fff01f;
         font-weight: bold;
+        line-height: 1;
     	@include adaptiv-font (32, 24);
         
-        img { width: 100px; }
+        img { max-width: 70px; }
     }
 
     &__menu {
@@ -54,7 +52,7 @@
                 width: 30px;
                 height: 4px;
                 border-radius: 4px;
-                background-color: #fff;
+                background-color: #000;
                 transition: all .4s;
             }
 
@@ -83,7 +81,7 @@
             width: 41px;
         }
         #checkbox:checked ~ .header__menu-box {
-            max-height: 300px;
+            max-height: 350px;
             font-size: 16px;
         }
     } 
@@ -93,15 +91,44 @@
         align-items: center;
 
         &-phone {
-            display: flex;
-            flex-direction: column;
+            max-width: 50px;
+            background: transparent;
+            cursor: pointer;
+            transition: all .5s;
+            animation: shake 1s infinite;
         }
 
+        &-tel {
+            position: absolute;
+            top: 72px;
+            padding: 10px 20px;
+            background-color: #333;
+            border: 2px solid #fff01f;
+            transition: all .5s;
+            opacity: 0;
+            visibility: hidden;
+
+            a {
+                padding: 5px 0;
+                transition: all .5s;
+            }
+
+            a:hover {
+                color: #fff01f;
+                text-decoration: underline;
+            }
+
+            &._active {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        
         &-btn {
             margin-left: 20px;
             padding: 10px;
             background: transparent;
-            color: #fff;
+            color: #fff01f;
             font-size: 16px;
             cursor: pointer;
             border-radius: 8px;
@@ -109,6 +136,7 @@
             transition: all .8s;
             &:hover {
                 color: #000;
+                opacity: 80%;
                 background-color: #fff01f;
             }
         }
@@ -116,4 +144,10 @@
         a { color: #fff; }
     }
     
+}
+
+@keyframes shake {
+    0% { transform: rotate(45deg); }
+    50% { transform: rotate(0deg); }
+    100% { transform: rotate(45deg); }
 }

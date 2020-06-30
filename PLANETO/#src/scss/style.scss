@@ -2,14 +2,13 @@
 	@font-face {
 		font-family: $font_name;
 		font-display: swap;
-		src: url("../fonts/#{$file_name}.woff") format("woff"),
-		url("../fonts/#{$file_name}.woff2") format("woff2");
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
 		font-weight: #{$weight};
 		font-style: #{$style};
 	}
 }
 
-$maxWidth: 1180;
+$maxWidth: 942;
 @mixin adaptiv-font($pcSize, $mobSize) {
 	$addSize: $pcSize - $mobSize;
 	$maxWidth: $maxWidth - 320;
@@ -18,22 +17,15 @@ $maxWidth: 1180;
 
 @import "./utils/fonts";
 @import "./utils/normalize";
-@import "./utils/media";
-@import "./components/header";
-@import "./components/header-body";
 
-html { scroll-behavior: smooth; }
-	 
 body {
-	font-family: "Alegreya", sans-serif;
-	overflow-x: hidden;
+	font-family: "RobotoCondensed", sans-serif;
+	color: #000;
 }
-
-header, section {
+header, section, footer {
 	position: relative;
-	padding: 0 calc(50% - 590px);
 	background-size: cover;
+	background-position: center;
+	padding: 0 calc(50% - 472px);
+	border: 1PX solid red;
 }
-
-.slick-list { overflow: hidden; }
-.slick-track { display: flex; }
