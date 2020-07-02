@@ -17,17 +17,35 @@ $maxWidth: 942;
 
 @import "./utils/fonts";
 @import "./utils/normalize";
+@import "./utils/media";
 @import "./components/header";
 @import "./components/header-content";
+@import "./components/services";
+@import "./components/carrers";
+@import "./components/partners";
+@import "./components/projects";
+@import "./components/footer";
 
 body {
 	font-family: "ttfDosis", sans-serif;
-	color: #000;
+	color: #282828;
 }
-section, footer {
+
+section {
 	background-size: cover;
 	background-position: center;
 	padding: 0 calc(50% - 472px);
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	color: #fff;
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	.ellipse { margin-right: 18px; }
 }
 
 .ellipse {

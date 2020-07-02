@@ -1,0 +1,103 @@
+@media (max-width: 1200px) {
+    header, section, footer {
+        padding: 0 calc(50% - 440px);
+    }
+
+    .header__content-title { white-space: inherit; }
+
+    .header__content-bg { top: 100px; }
+
+    .carrers__box {
+        flex-wrap: wrap;
+        max-width: 700px;
+        margin: 0 auto;
+
+        .ellipse { display: none; }
+    }
+
+}
+
+@media (max-width: 992px) {
+    header, section, footer {
+        padding: 0 calc(50% - 380px);
+    }
+
+    .header {
+        height: 60px;
+        line-height: 60px;
+
+        &__menu {
+            position: absolute;
+            top: 5px;
+            right: 0;
+            z-index: 10;
+    
+            &-box {
+                max-height: 0;
+                font-size: 0;
+                overflow: hidden;
+                transition: all .5s
+            }
+    
+            &-content {
+                flex-direction: column;
+                height: auto;
+                background-color: #515553;
+                padding: 10px 20px;
+                border: 2px solid #fff;
+                border-radius: 8px;
+            }
+
+            &-item { padding: 0; }
+    
+            a {
+                width: 100%;
+                text-align: center;
+                &:hover {
+                    color: #40b583;
+                    border: none;
+                }
+            }
+    
+            li { width: 100%; }
+            label { display: block; padding: 10px 5px 15px; }
+            .burger { display: block; }
+        }
+
+        &__content-bg { top: 0; }
+
+        &__content-title { padding: 72px 0 40px; }
+
+        &__content-icons { max-width: 600px; }
+    }   
+}
+
+@media (max-width: 768px) {
+    header, section, footer {
+        padding: 0 calc(50% - 230px);
+    }
+
+    .header__content-bg { top: 60px; } 
+
+    .carrers__box-item { max-width: 225px; }
+}
+
+@media (max-width: 480px) {
+    header, section, footer {
+        padding: 0 calc(50% - 140px);
+    }
+
+    .header__content-title { font-size: 32px; }
+
+    .header__menu-content { margin-right: 20px; }
+
+    .services__box {
+        flex-direction: column;
+
+        &-content { width: 100%; }
+
+        .img-1, .img-2 { padding: 0 0 50px; }
+    }
+
+    .carrers__box { justify-content: center; }
+}

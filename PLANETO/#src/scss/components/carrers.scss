@@ -1,0 +1,52 @@
+.carrers {
+    min-height: 200px;
+    padding-bottom: 34px;
+    background-color: #45B887;
+
+    &__title {
+        text-align: center;
+        padding: 34px 0;
+        color: #fff;
+        letter-spacing: 5px;
+        font-size: 30px;
+        font-weight: 300;
+        font-family: "freeHand", serif;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            max-width: 246px;
+            flex: 1;
+        }
+
+        .ellipse {
+            width: 15px;
+            height: 15px;
+            margin: 0 10px;
+            padding: 3px;
+            border: 2px solid #fff;
+        }
+
+        .numbers {
+            min-width: 155px;
+            width: 100%;
+            height: 60px;
+            font-size: 30px;
+            line-height: 30px;
+        }
+
+        span {
+            padding-right: 5px;
+            font-size: 60px;
+            font-weight: 300;
+        }
+    }
+}
