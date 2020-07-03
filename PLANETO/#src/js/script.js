@@ -14,7 +14,11 @@ $(document).ready(function () {
         responsive: [{
             breakpoint: 1200,
             settings: {
-                slidesToShow: 4
+                slidesToShow: 2
+            },
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1
             }
         }]
     });
