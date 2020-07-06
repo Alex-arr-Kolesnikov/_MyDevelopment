@@ -21,6 +21,7 @@ $maxWidth: 1180;
 @import "./utils/media";
 @import "./components/header";
 @import "./components/header-body";
+@import "./components/features";
 
 html { scroll-behavior: smooth; }
 	 
@@ -29,10 +30,23 @@ body {
 	overflow-x: hidden;
 }
 
-header, section {
-	position: relative;
-	padding: 0 calc(50% - 590px);
-	background-size: cover;
+section { padding: 50px 0; }
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1180px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.section-title {
+	padding: 0 30px 50px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff01f;
+	@include adaptiv-font(27, 21);
 }
 
 .slick-list { overflow: hidden; }
