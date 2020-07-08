@@ -9,7 +9,7 @@
 	}
 }
 
-$maxWidth: 1180;
+$maxWidth: 1150;
 @mixin adaptiv-font($pcSize, $mobSize) {
 	$addSize: $pcSize - $mobSize;
 	$maxWidth: $maxWidth - 320;
@@ -22,6 +22,10 @@ $maxWidth: 1180;
 @import "./components/header";
 @import "./components/header-body";
 @import "./components/features";
+@import "./components/price";
+@import "./components/feedback";
+@import "./components/contacts";
+@import "./components/footer.scss";
 
 html { scroll-behavior: smooth; }
 	 
@@ -33,9 +37,6 @@ body {
 section { padding: 50px 0; }
 
 .container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	max-width: 1180px;
 	margin: 0 auto;
 	padding: 0 15px;
@@ -44,9 +45,31 @@ section { padding: 50px 0; }
 .section-title {
 	padding: 0 30px 50px;
 	text-align: center;
-	text-transform: uppercase;
 	color: #fff01f;
-	@include adaptiv-font(27, 21);
+
+	h2 {
+		text-transform: uppercase;
+		@include adaptiv-font(31, 21);
+	}
+
+	p { font-size: 21px; }
+}
+
+.btn {
+	display: block;
+	text-align: center;
+	padding: 15px;
+	margin: 35px 0 20px;
+	color: #000;
+	font-weight: 700;
+	border-radius: 8px;
+	border: 2px solid #fff01f;
+	background-color: transparent;
+	transition: all .8s;
+	cursor: pointer;
+
+	&:hover { background-color: #fff01f; }
+
 }
 
 .slick-list { overflow: hidden; }

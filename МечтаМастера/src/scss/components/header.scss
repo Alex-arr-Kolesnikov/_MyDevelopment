@@ -3,6 +3,12 @@
     background-color: #333;
     z-index: 2;
 
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     &__logo {
         display: flex;
         align-items: center;
@@ -101,7 +107,7 @@
 
         &-tel {
             position: absolute;
-            top: 72px;
+            top: 75px;
             padding: 10px 20px;
             background-color: #333;
             border: 2px solid #fff01f;
@@ -125,19 +131,12 @@
             }
         }
         
-        &-btn {
-            margin-left: 20px;
+        .btn {
+            margin: 0 0 0 20px;
             padding: 10px;
-            background: transparent;
             color: #fff01f;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 8px;
-            border: 2px solid #fff01f;
-            transition: all .8s;
             &:hover {
                 color: #000;
-                opacity: 80%;
                 background-color: #fff01f;
             }
         }
