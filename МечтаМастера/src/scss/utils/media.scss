@@ -99,6 +99,32 @@
             ul { min-height: 0; }
         }
     }
+
+    .feedback__box {
+        padding: 30px 50px;
+
+        &-item { flex-direction: column; }
+        
+        &-right .text { padding: 0; }
+    }
+
+    .contacts__box {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contacts__map {
+        max-width: 500px;
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .footer {
+
+        &__social { padding: 20px 0; }
+
+        .container { flex-direction: column; }
+    }
 }
 
 @media (max-width: 480px) {

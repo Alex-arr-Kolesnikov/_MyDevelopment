@@ -74,3 +74,11 @@ section { padding: 50px 0; }
 
 .slick-list { overflow: hidden; }
 .slick-track { display: flex; }
+.slick-arrow {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 50px;
+	cursor: pointer;
+	background: transparent;
+}

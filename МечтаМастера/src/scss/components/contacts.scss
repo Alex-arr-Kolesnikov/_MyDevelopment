@@ -1,0 +1,47 @@
+.contacts {
+    position: relative;
+    background: center no-repeat;
+    background-size: cover;
+
+    .section-title {
+        position: relative;
+        color: #000; 
+        z-index: 1;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+		@include adaptiv-font(31, 21);
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.8);
+            z-index: 0;
+        }
+    }
+
+    &__text {
+        line-height: 1;
+        z-index: 1;
+
+        ul { padding-top: 20px; }
+
+        a {
+            padding-top: 10px;
+            color: #000;
+            text-decoration: 3px underline #fff01f;
+        }
+    }
+
+    &__map {
+        width: 500px;
+        z-index: 1;
+    }
+}
