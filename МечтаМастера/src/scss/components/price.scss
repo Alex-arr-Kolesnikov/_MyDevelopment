@@ -1,8 +1,60 @@
 .price {
-    background: center no-repeat;
+    position: relative;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 
     .section-title { color: #000; }
+
+    &__popap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.8);
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1;
+
+        &-form {
+            position: relative;
+            top: 25%;
+            max-width: 350px;
+            margin: auto;
+            padding: 20px 30px;
+            text-align: center;
+            background-color: #ffffffab;
+        
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+        
+            label {
+                margin: 0 auto;
+                padding: 5px 10px;
+                background: #fff;
+                border-radius: 4px;
+                transform: translateY(115%) translateX(0%);
+            }
+
+            input {
+                margin-top: 20px;
+                padding: 15px;
+                border-radius: 4px;
+                border: none;
+            }
+
+        }
+
+        &._active {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
 }
 
 .price__box {
@@ -48,9 +100,7 @@
         }
 
         ul { min-height: 120px; }
-
-        .btn {
-            border: 2px solid #000;
-        }
     }
+
+    &-btn { border: 2px solid #000 !important; }
 }
