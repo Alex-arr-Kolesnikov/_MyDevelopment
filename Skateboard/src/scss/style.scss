@@ -1,0 +1,118 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"),
+		url("../fonts/#{$file_name}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+
+@import "./utils/fonts.scss";
+@import "./utils/normalize.scss";
+@import "./utils/media.scss";
+@import "./components/header.scss";
+@import "./components/header-body.scss";
+
+$fontfamaly: "PTSans", sans-serif;
+$fontsize: 14px;
+$fontcolor: #000;
+$maxWidth: 970px;
+
+	 
+body {
+	font-family: $fontfamaly;
+	font-size: $fontsize;
+	color: $fontcolor;
+	overflow-x: hidden;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-height: 100%;
+}
+._container {
+	max-width: $maxWidth;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.title {
+	&__item {
+		margin-bottom: 23px;
+		color: #FFB229;
+        font: 400  40px 'ceremonious';
+	}
+
+	&__main {
+		letter-spacing: 5.25px;
+		text-transform: uppercase;
+		font: 500  40px 'PFDin';
+		&-white { color: #fff; }
+	}
+}
+
+.btn {
+	position: relative;
+	padding: 10px 50px;
+	color: #fff;
+	font: 500  18px 'PFDin';
+	border-radius: 20px;
+	text-transform: uppercase;
+	background-color: #ffb229;
+	border: 3px solid #ffb229;
+    transition: all .5s ease;
+
+	&:hover {
+		color: #ffb229;
+		background-color: transparent;
+	}
+
+	span {
+		letter-spacing: 1px;
+		&:after, &:before {
+			content: ': :';
+			position: absolute;
+			top: 7px;
+			color: #000;
+		}
+		&:after { right: 20px; }
+		&:before { left: 20px; }
+	}
+}
+/************ Slik slider **************/S
+.slick-list { overflow: hidden; }
+.slick-track { display: flex; }
+.slick-arrow {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 50px;
+	cursor: pointer;
+	background: transparent;
+}
+.slick-dots {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+
+	.slick-active { background: #E44256; }
+
+	li {
+		display: inline-block;
+		width: 7px;
+		height: 7px;
+		margin: 0 5px;
+		background: #CCCCCC;
+		border-radius: 50%;
+
+		button { display: none; }
+	}
+}
