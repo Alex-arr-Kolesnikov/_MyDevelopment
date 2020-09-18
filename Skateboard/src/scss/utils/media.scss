@@ -24,6 +24,10 @@
 @media (max-width: 768px) {
     //._container { max-width: 460px; }
 
+    .title__main {
+        font-size: 24px;
+        letter-spacing: 3px;
+    }
     .burger { display: block; }
 
     .header__container { justify-content: space-between; }
@@ -36,8 +40,7 @@
         top: 75px;
         opacity: 0;
         overflow: hidden;
-        background: rgba(0, 0, 0, .8);
-        z-index: 5;
+        background: rgba(0, 0, 0, .9);
 
         &__body {
             display: block;
@@ -65,4 +68,5 @@
 
     .actions-header__user { margin: 0; }
 
+    .main__slider-control { display: none; }
 }

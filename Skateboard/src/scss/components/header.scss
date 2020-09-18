@@ -39,6 +39,7 @@
     &._active {
         opacity: 1;
         overflow: visible;
+        z-index: 3;
     }
 
 }

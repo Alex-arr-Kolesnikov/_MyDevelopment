@@ -48,23 +48,27 @@ var Menu = {
 Menu.init();
 /********************** end Burger Menu **************************/
 
+/********************** Slick Slider **************************/
+$('.box__sider').slick({
+  arrows: true,
+  dots: false,
+  slidesToShow: 1,
+  autoplay: true,
+  speed: 1000,
+  autoplaySpeed: 5000,
+  appendArrows: $('.control__slider'),
+  prevArrow: '<button type="button" class="slick-prev">&#10094</button>',
+		nextArrow: '<button type="button" class="slick-next">&#10095</button>'
+});
+/********************** end Slick Slider **************************/
+
 
 /*
-$(document).mouseup(function (e){ // событие клика по веб-документу
-  let div = $('.user-header'); // тут указываем ID элемента
-  if (!div.is(e.target) // если клик был не по нашему блоку
-      && div.has(e.target).length === 0) { // и не по его дочерним элементам
-    div.hide('.user-header__menu'); // скрываем его
-  }
-});
-
-
- $('.reviews__box-slider').slick({
-    arrows: false,
-    dots: true,
-    slidesToShow: 1,
-    autoplay: true,
-    speed: 1000,
-    autoplaySpeed: 5000,
-});
- */
+  $(document).mouseup(function (e){ // событие клика по веб-документу
+    let div = $('.user-header'); // тут указываем ID элемента
+    if (!div.is(e.target) // если клик был не по нашему блоку
+        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+      div.hide('.user-header__menu'); // скрываем его
+    }
+  });
+*/

@@ -1,30 +1,96 @@
-.item__sider {
+.main__slider {
     position: relative;
 
     &-content {
-        position: relative;
-        padding: 30px 0px 100px 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0px 0px 100px 0px;
         text-align: center;
         z-index: 2;
     }
 
-    &-text {
-        max-width: 600px;
-        margin: 25px auto 0;
-        color: #fff;
-        font-size: 15px;
-        line-height: calc(25 / 15);
-    }
-
-    &-bg {
+    &-container {
         position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
+        top: 30px;
         left: 0;
+        right: 0;
+        z-index: 3;
+
+        .text {
+            max-width: 600px;
+            margin: 25px auto 0;
+            color: #fff;
+            font-size: 15px;
+            line-height: calc(25 / 15);
+        }
+
+        .content-btn {
+            margin-top: 55px;
+        }
     }
 
-    &-btn {
-        margin-top: 55px;
+    .box__sider {
+        position: relative;
+        max-height: 500px;
+
+        img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            object-position: bottom;
+        }
+        .bg2 { object-position: top; }
+        
+        &:before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .5);
+            z-index: 1;
+        }
     }
+
+    &-control {
+        position: absolute;
+        left: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        transform: translate(-50%,-50%);
+        z-index: 3;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 90%;
+            height: 90%;
+            background-color: #fff;
+            transform: rotate(45deg);
+        }
+    }
+
+    .control__slider {
+        
+        &-wheel {
+            position: absolute;
+            left: 35%;
+            width: 30px;
+            height: 30px;
+            z-index: 2;
+            animation: rotate_wheel 1s infinite linear;
+        }
+    }
+}
+
+@keyframes rotate_wheel {
+    0% {}
+    100% { transform: rotate(360deg); }
 }
