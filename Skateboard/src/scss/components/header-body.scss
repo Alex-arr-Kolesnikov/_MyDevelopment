@@ -1,5 +1,6 @@
 .main__slider {
     position: relative;
+    min-height: 570px;
 
     &-content {
         position: absolute;
@@ -31,7 +32,7 @@
         }
     }
 
-    .box__sider {
+    .box__slider {
         position: relative;
         max-height: 500px;
 
@@ -74,6 +75,19 @@
             height: 90%;
             background-color: #fff;
             transform: rotate(45deg);
+        }
+
+        .slick-arrow {
+            position: relative;
+            padding: 0;
+            font-size: 50px;
+            color: #ffb229;
+            cursor: pointer;
+            background: transparent;
+            transition: all .3s ease;
+            z-index: 2;
+        
+            &:hover { font-size: 60px; }
         }
     }
 

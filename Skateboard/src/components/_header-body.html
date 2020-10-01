@@ -1,17 +1,25 @@
-<div class="header__body main__slider">
+<section class="header__body main__slider">
     <div class="main__slider-content">
 
-        <div class="main__slider-box box__sider">
-            <div class="box__sider-item _item-bg">
-
-                <img class="bg1" src="./img/item-bg1.jpg" alt="item-bg">
-
+        <div class="main__slider-box box__slider">
+            <div class="box__slider-item _item-bg">   
+                <img 
+                    class="bg1 lazyload"
+                    src="./img/item-bg1.jpg"
+                    data-src="./img/item-bg1.jpg"
+                    alt="item-bg"
+                    loading="lazy"
+                />
             </div>
 
-            <div class="box__sider-item _item-bg">
-
-                <img class="bg2" src="./img/item-bg2.jpg" alt="item-bg">
-
+            <div class="box__slider-item _item-bg">
+                <img 
+                    class="bg2 lazyload"
+                    src="./img/item-bg2.jpg"
+                    data-src="./img/item-bg2.jpg"
+                    alt="item-bg"
+                    loading="lazy"
+                />
             </div>
         </div>
 
@@ -19,7 +27,7 @@
 
             <div class="title">
                 <div class="title__item">Exclusive models</div>
-                <div class="title__main title__main-white">We make your fantasies come true</div>
+                <h2 class="title__main title__main-white">We make your fantasies come true</h2>
             </div>
 
             <div class="text">Boards of various sizes and shapes. Quality materials and custom assembly. We provide you with related products, quality service and rare parts. We take into account all your wishes. We make convenient payment and delivery for you at any time.</div>
@@ -29,19 +37,13 @@
         </div>
 
         <div class="main__slider-control control__slider">
-            <img class="control__slider-wheel" src="./img/skateboard-wheel.svg" alt="wheel-icon">
+            <img 
+                class="control__slider-wheel lazyload"
+                src="./img/skateboard-wheel.svg"
+                data-src="./img/skateboard-wheel.svg"
+                alt="wheel-icon"
+                loading="lazy"
+            />
         </div>
     </div>
-</div>
-
-<!--
-<div class="control__slider-arrow control__slider-arrow_prev">&#10094</div>
-<div class="control__slider-arrow control__slider-arrow_next">&#10095</div>
-&-arrow {
-            position: relative;
-            font-size: 50px;
-            color: #ffb229;
-            cursor: pointer;
-            z-index: 2;
-        }
--->
+</section>

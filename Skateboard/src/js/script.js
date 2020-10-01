@@ -49,18 +49,78 @@ Menu.init();
 /********************** end Burger Menu **************************/
 
 /********************** Slick Slider **************************/
-$('.box__sider').slick({
+$('.box__slider').slick({
   arrows: true,
   dots: false,
   slidesToShow: 1,
   autoplay: true,
   speed: 1000,
   autoplaySpeed: 5000,
-  appendArrows: $('.control__slider'),
+  appendArrows: $('.main__slider-control'),
   prevArrow: '<button type="button" class="slick-prev">&#10094</button>',
 		nextArrow: '<button type="button" class="slick-next">&#10095</button>'
 });
+
+$('.slider__products-body').slick({
+  arrows: true,
+  dots: false,
+  slidesToShow: 3,
+  autoplay: true,
+  speed: 1000,
+  autoplaySpeed: 5000,
+  appendArrows: $('.slider__products-control'),
+  prevArrow: '<button type="button" class="slick-prev">&#8606</button>',
+  nextArrow: '<button type="button" class="slick-next">&#8608</button>',
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
 /********************** end Slick Slider **************************/
+
+/************************** lazyload **************************/
+if ("loading" in HTMLImageElement.prototype) {
+  let images = document.querySelectorAll('img[loading="lazy"]');
+  let sources = document.querySelectorAll("source[data-srcset]");
+
+  sources.forEach(function (source) {
+    source.srcset = source.dataset.srcset;
+  });
+  images.forEach(function (img) {
+      img.src = img.dataset.src;
+  });
+
+} else {
+  let script = document.createElement("script");
+  script.src = "/link/to/lazyload.js";
+  document.body.appendChild(script);
+}
+/************************** end lazyload **************************/
 
 
 /*
