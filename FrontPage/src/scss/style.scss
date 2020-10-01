@@ -16,26 +16,45 @@ $maxWidth: 1170;
 	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
 }
 
-@import "./utils/fonts";
-@import "./utils/normalize";
-@import "./utils/media";
+@import "./utils/fonts.scss";
+@import "./utils/normalize.scss";
+@import "./utils/media.scss";
 @import "./components/preloader.scss";
-@import "./components/header";
-@import "./components/header-body";
-@import "./components/footer.scss";
+@import "./components/homePage.scss";
+@import "./components/worksPage.scss";
 
 html { scroll-behavior: smooth; }
 	 
 body {
-	background-color: #000;
+	background-color: #333;
 	font-family: "Alegreya", sans-serif;
 	overflow-x: hidden;
+
+	perspective: 1px;
+	transform-style: preserve-3d;
 }
 
-section { padding: 50px 0; }
+section { padding: 20px 0; }
+
+.title {
+	font-weight: 700;
+	text-shadow: 0 0 10px #fff;
+	@include adaptiv-font(80, 40);
+}
+
+.subtitle {
+	display: block;
+	padding-top: 80px;
+	color: #fff;
+	text-shadow: 0 0 10px #fff;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
 
 .container {
 	max-width: 1170px;
+	width: 100%;
+	height: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
 }
@@ -50,6 +69,19 @@ section { padding: 50px 0; }
 
 }
 
+.slick-list { overflow: hidden; }
+.slick-track { display: flex; height: 100vh; }
+.slick-arrow {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 50px;
+	cursor: pointer;
+	color: #fff;
+	background: transparent;
+}
+
+/*
 .btn {
 	display: block;
 	text-align: center;
@@ -66,14 +98,4 @@ section { padding: 50px 0; }
 	&:hover { background-color: red; }
 
 }
-
-.slick-list { overflow: hidden; }
-.slick-track { display: flex; }
-.slick-arrow {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	width: 50px;
-	cursor: pointer;
-	background: transparent;
-}
+*/
