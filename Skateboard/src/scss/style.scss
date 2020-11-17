@@ -15,17 +15,22 @@
 @import "./components/header.scss";
 @import "./components/header-body.scss";
 @import "./components/products.scss";
+@import "./components/categories";
+@import "./components/services";
+
 
 $fontfamaly: "PTSans", sans-serif;
 $fontsize: 14px;
 $fontcolor: #000;
 $maxWidth: 970px;
+$bgcolor: #eff1f5;
 
 	 
 body {
 	font-family: $fontfamaly;
 	font-size: $fontsize;
 	color: $fontcolor;
+	background-color: $bgcolor;
 	overflow-x: hidden;
 }
 
@@ -34,6 +39,7 @@ body {
 	flex-direction: column;
 	width: 100%;
 	min-height: 100%;
+	overflow: hidden;
 }
 ._container {
 	max-width: $maxWidth;
