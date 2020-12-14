@@ -58,14 +58,13 @@ $('.box__slider').slick({
   autoplaySpeed: 5000,
   appendArrows: $('.main__slider-control'),
   prevArrow: '<button type="button" class="slick-prev">&#10094</button>',
-		nextArrow: '<button type="button" class="slick-next">&#10095</button>'
+	nextArrow: '<button type="button" class="slick-next">&#10095</button>'
 });
 
 $('.slider__products-body').slick({
   arrows: true,
   dots: false,
   slidesToShow: 3,
-  autoplay: true,
   speed: 1000,
   autoplaySpeed: 5000,
   appendArrows: $('.slider__products-control'),
@@ -87,6 +86,16 @@ $('.slider__products-body').slick({
       }
     }
   ]
+});
+
+$('.slider-quotes__body').slick({
+  arrows: true,
+  dots: false,
+  slidesToShow: 1,
+  speed: 1000,
+  autoplaySpeed: 5000,
+  appendArrows: $('.control-quotes__link'),
+  nextArrow: '<button type="button" class="slick-next circle-link">&#8635</button>'
 });
 
 /********************** end Slick Slider **************************/

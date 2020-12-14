@@ -17,6 +17,8 @@
 @import "./components/products.scss";
 @import "./components/categories";
 @import "./components/services";
+@import "./components/quotes";
+@import "./components/footer";
 
 
 $fontfamaly: "PTSans", sans-serif;
@@ -32,6 +34,7 @@ body {
 	color: $fontcolor;
 	background-color: $bgcolor;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 .wrapper {

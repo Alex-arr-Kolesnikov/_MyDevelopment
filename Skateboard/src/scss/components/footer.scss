@@ -1,0 +1,18 @@
+.footer {
+    background-color: #1c242a;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 75px;
+    }
+    &__phone {
+        display: flex;
+        color: #ffb229;
+        font: 500 25px PTSans;
+        small {
+            padding: 5px 3px 0 0;
+            font-size: 14px; 
+        }
+    }
+}
